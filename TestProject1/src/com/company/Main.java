@@ -124,7 +124,7 @@ public class Main {
         int[] input1 = {1, 2, 3, 4, 1, 3, 1, 6, 6, 1, 1};
         int isAllLessThan = 3;
         if () {
-
+            wewewewee
         }
     }
 }
