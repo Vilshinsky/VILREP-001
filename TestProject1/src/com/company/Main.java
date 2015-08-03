@@ -24,7 +24,40 @@ public class Main {
         }
         return true;
     }
-
+    // Функция принимает 2 массива любой длинньі, и вьідает в результате одинаковьіе ли все их значения.
+    public static boolean compareArrays(int[] arr1, int[] arr2) {
+        if (arr1.length != arr2.length) {
+            return false;
+        }
+        for (int i = 0; i < arr1.length; i++) {
+            if (arr1[i] != arr2[i]) {
+                return false;
+            }
+        }
+        return true;
+    }
+    // Helper functions for beautiful output.
+    public static void checkResult(int expected, int actual) {
+        if (expected == actual) {
+            System.out.println("Test PASSED.");
+        } else {
+            System.out.println("Expected: " + expected + " Actual: " + actual + " Test FAILED.");
+        }
+    }
+    public static void checkResult2(String expected, String actual) {
+        if (expected.equals(actual)) {
+            System.out.println("Test PASSED.");
+        } else {
+            System.out.println("Expected: " + expected + " Actual: " + actual + " Test FAILED.");
+        }
+    }
+    public static void checkResult3(boolean expected, boolean actual) {
+        if (expected == actual) {
+            System.out.println("Test PASSED.");
+        } else {
+            System.out.println("Expected: " + expected + " Actual: " + actual + " Test FAILED.");
+        }
+    }
     public static void main(String[] args) {
 	// write your code here
 //        String t = "hello Class!";
@@ -154,7 +187,15 @@ public class Main {
 
         System.out.println(multiString(3, "Hello"));
 
-        System.out.println(compare5ElArrays(new int[]{1, 2, 3, 4, 6}, new int []{1, 2, 3, 4, 6}));
+        System.out.println(compare5ElArrays(new int[]{1, 2, 3, 4, 6}, new int[]{1, 2, 3, 4, 6}));
+
+        System.out.println(compareArrays(new int[]{1, 2, 3, 4, 5, 6}, new int[]{1, 2, 3, 4, 5, 6, 7}));
+
+        checkResult(5, 5);
+
+        checkResult2("Nope", "Yep");
+
+        checkResult3(true, false);
 
     }
     }
