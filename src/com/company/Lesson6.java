@@ -9,7 +9,7 @@ import java.util.Arrays;
  * Created by admin on 04.08.15.
  */
 public class Lesson6 {
-    public static void main (String[] less6){
+    public static void main (String[] less6) throws InterruptedException {
         Main.sleepIn(true, false);
         String a = "asdadsad";
         System.out.println(a.length());
@@ -34,6 +34,7 @@ public class Lesson6 {
 
         ChromeDriver drvr1 = new ChromeDriver();
         drvr1.get("http://google.com");
+        Thread.sleep(5000);
         drvr1.quit();
         
     }
