@@ -58,6 +58,26 @@ public class Main {
             System.out.println("Expected: " + expected + " Actual: " + actual + " Test FAILED.");
         }
     }
+    public static boolean sleepIn(boolean weekday, boolean vacation) {
+        if (!weekday || vacation) {
+            System.out.println("True");
+            return true;
+        }
+        System.out.println("False");
+        return false;
+    }
+    public static boolean monkeyTrouble(boolean aSmile, boolean bSmile) {
+        if (aSmile && bSmile) {
+            System.out.println("monkey true");
+            return true;
+        }
+        if (!aSmile && !bSmile) {
+            System.out.println("monkey true");
+            return true;
+        }
+        System.out.println("monkey false");
+        return false;
+    }
     public static void main(String[] args) {
 	// write your code here
 //        String t = "hello Class!";
@@ -193,9 +213,17 @@ public class Main {
 
         checkResult(5, 5);
 
-        checkResult2("Nope", "Yep");
+        checkResult2("Yep", "Yep");
 
         checkResult3(true, false);
 
+        sleepIn(true, false);
+        sleepIn(true,true);
+        sleepIn(false,false);
+        sleepIn(false,true);
+
+        monkeyTrouble(true, true);
+        monkeyTrouble(false,false);
+        monkeyTrouble(true,false);
     }
     }
