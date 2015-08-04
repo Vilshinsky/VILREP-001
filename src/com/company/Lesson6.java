@@ -33,6 +33,8 @@ public class Lesson6 {
         System.setProperty("webdriver.chrome.driver", "C:\\Share\\chromedriver.exe");
 
         ChromeDriver drvr1 = new ChromeDriver();
-
+        drvr1.get("http://google.com");
+        drvr1.quit();
+        
     }
 }
