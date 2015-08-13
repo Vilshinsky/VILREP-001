@@ -3,8 +3,6 @@ package com.company;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.util.List;
-
 /**
  * Created by admin on 13.08.15.
  */
@@ -16,7 +14,7 @@ public class Lesson8 {
             e.printStackTrace();
         }
     }
-    public static void main (String less8) {
+    public static void main (String[] less8) {
         System.setProperty("webdriver.chrome.driver", "C:\\Share\\chromedriver.exe"); //Showing webdriver folder
 
         ChromeDriver drvr2 = new ChromeDriver();
@@ -28,7 +26,7 @@ public class Lesson8 {
         slp(2);
         pass.sendKeys("mypass");
         logn.sendKeys("mysite");
-        drvr2.findElementByXPath("//*[@type='submit']").click();                //OR drvr1.findElementByName("btnG").click();
+        drvr2.findElementByXPath("//*[@type='submit']").click();
 
         System.out.println(genpas.getAttribute("value"));
 
