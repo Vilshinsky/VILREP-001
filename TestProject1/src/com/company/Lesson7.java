@@ -1,8 +1,11 @@
 package com.company;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import java.util.List;
 
 /**
  * Created by admin on 06.08.15.
@@ -34,9 +37,20 @@ public class Lesson7 {
         System.out.println(ntitle);
 
         WebElement j = drvr1.findElementByName("q");
+        slp(2);
+        j.sendKeys("котята");
+        j.sendKeys(Keys.ENTER);                         //OR drvr1.findElementByName("btnG").click();
+        System.out.println(j.getAttribute("value"));
         slp(5);
-        j.sendKeys("Selenium web driver command list");
-        j.sendKeys(Keys.ENTER);
+        WebElement d = drvr1.findElementByClassName("srg");
+        List<WebElement> res = d.findElements(By.tagName("a"));
+//        for (WebElement w : res) {
+//            System.out.println(w.getText());
+//        }
+        System.out.println(res.get(0).getText());
+        WebElement res1 = res.get(0);
+        res1.click();
+
 
 
 
