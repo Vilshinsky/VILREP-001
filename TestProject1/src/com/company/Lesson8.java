@@ -3,9 +3,6 @@ package com.company;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-/**
- * Created by admin on 13.08.15.
- */
 public class Lesson8 {
     public static void slp (long sec) {
         try {
@@ -15,7 +12,7 @@ public class Lesson8 {
         }
     }
     public static void main (String[] less8) {
-        System.setProperty("webdriver.chrome.driver", "C:\\Share\\chromedriver.exe"); //Showing webdriver folder
+        System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe"); //Showing webdriver folder
 
         ChromeDriver drvr2 = new ChromeDriver();
         drvr2.get("http://angel.net/~nic/passwd.current.html");                 //Getting page
