@@ -26,7 +26,7 @@ public class Lesson7 {
 //        for(int i = 0; i < b.length; i++) {
 //            System.out.println(b[i]);
 //        }
-        System.setProperty("webdriver.chrome.driver", "C:\\Share\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
 
         ChromeDriver drvr1 = new ChromeDriver();
         drvr1.get("http://google.com");
