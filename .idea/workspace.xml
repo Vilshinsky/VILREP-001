@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5badfcf7-454c-4d2c-a4b1-73abdab3a6c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProject1/src/com/company/Work.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestProject1/src/com/company/HWTether.java" afterPath="$PROJECT_DIR$/TestProject1/src/com/company/HWTether.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -59,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Lesson8.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="65" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="65" />
+              <caret line="20" column="65" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -68,8 +66,8 @@
       <file leaf-file-name="HWTether.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/HWTether.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5416667">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="24" selection-end-column="60" />
+            <state vertical-scroll-proportion="0.6611111">
+              <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -132,13 +130,9 @@
         <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Dogtests.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="false" />
-                <element signature="e#129#130#0" expanded="false" />
-                <element signature="e#203#204#0" expanded="false" />
-                <element signature="e#245#246#0" expanded="false" />
-                <element signature="e#313#314#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -154,6 +148,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
@@ -184,8 +179,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="616" />
-    <option name="y" value="299" />
+    <option name="x" value="632" />
+    <option name="y" value="271" />
     <option name="width" value="1255" />
     <option name="height" value="693" />
   </component>
@@ -533,7 +528,13 @@
       <option name="project" value="LOCAL" />
       <updated>1440156194935</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="others">
+      <created>1441100709373</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1441100709373</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -546,8 +547,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="616" y="299" width="1255" height="693" extended-state="0" />
-    <editor active="false" />
+    <frame x="632" y="271" width="1255" height="693" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295063" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -556,8 +557,8 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295063" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30960855" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291815" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30960855" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295063" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18828452" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -590,7 +591,8 @@
     <MESSAGE value="finished tether hw" />
     <MESSAGE value="lesson with @Tests" />
     <MESSAGE value="warmups" />
-    <option name="LAST_COMMIT_MESSAGE" value="warmups" />
+    <MESSAGE value="others" />
+    <option name="LAST_COMMIT_MESSAGE" value="others" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -639,10 +641,6 @@
           <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#129#130#0" expanded="false" />
-            <element signature="e#203#204#0" expanded="false" />
-            <element signature="e#245#246#0" expanded="false" />
-            <element signature="e#313#314#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -728,10 +726,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#129#130#0" expanded="false" />
-            <element signature="e#203#204#0" expanded="false" />
-            <element signature="e#245#246#0" expanded="false" />
-            <element signature="e#313#314#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -817,10 +811,6 @@
           <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#129#130#0" expanded="false" />
-            <element signature="e#203#204#0" expanded="false" />
-            <element signature="e#245#246#0" expanded="false" />
-            <element signature="e#313#314#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -906,10 +896,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#129#130#0" expanded="false" />
-            <element signature="e#203#204#0" expanded="false" />
-            <element signature="e#245#246#0" expanded="false" />
-            <element signature="e#313#314#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1099,13 +1085,9 @@
     <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Dogtests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#129#130#0" expanded="false" />
-            <element signature="e#203#204#0" expanded="false" />
-            <element signature="e#245#246#0" expanded="false" />
-            <element signature="e#313#314#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1128,7 +1110,7 @@
     <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Lesson8.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="65" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="65" />
+          <caret line="20" column="65" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="65" />
           <folding />
         </state>
       </provider>
@@ -1156,8 +1138,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/HWTether.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5416667">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="24" selection-end-column="60" />
+        <state vertical-scroll-proportion="0.6611111">
+          <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
