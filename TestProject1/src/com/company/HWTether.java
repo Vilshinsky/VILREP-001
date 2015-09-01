@@ -21,6 +21,7 @@ public class HWTether {
         WebElement passer = dvr.findElement(By.xpath("//div[@ng-messages='loginForm.password.$error']/div[1]"));
         System.out.println("Password: " + passer.getText());
         passw.sendKeys("asd");
+        passer = dvr.findElement(By.xpath("//div[@ng-messages='loginForm.password.$error']/div[1]"));
         System.out.println("Password: " + passer.getText());
         passw.sendKeys("fff");
         System.out.println(dvr.findElements(By.xpath("//div[@ng-messages='loginForm.password.$error']/div[1]")).size());
