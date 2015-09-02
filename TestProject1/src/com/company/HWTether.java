@@ -39,5 +39,6 @@ public class HWTether {
         System.out.println(dvr.findElements(By.xpath("//div[@ng-messages='loginForm.username.$error']/div[1]")).size());
         WebElement submit = dvr.findElement(By.xpath("//button[@class='submit-btn md-raised md-primary md-button md-default-theme']/span[1]"));
         submit.click();
+
     }
 }
