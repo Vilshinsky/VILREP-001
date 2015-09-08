@@ -88,48 +88,56 @@ public class HWAngel {
         generate(driver);
         System.out.println(giveValue(driver));
         Assert.assertEquals("zgnkRp9Ivvzo8@1a", giveValue(driver));
+        Assert.assertEquals(16, giveValueLength(driver));
 
         setMaster("asdasdasd", driver);
         setSiteName("google.com", driver);
         generate(driver);
         System.out.println(giveValue(driver));
         Assert.assertEquals("XUjQQ/CBenGJ2@1a", giveValue(driver));
+        Assert.assertEquals(16, giveValueLength(driver));
 
         setMaster("ASDASDASD", driver);
         setSiteName("google.com", driver);
         generate(driver);
         System.out.println(giveValue(driver));
         Assert.assertEquals("4n2vcjq29YAE+@1a", giveValue(driver));
+        Assert.assertEquals(16, giveValueLength(driver));
 
         setMaster("asdasdasd", driver);
         setSiteName("GOOGLE.COM", driver);
         generate(driver);
         System.out.println(giveValue(driver));
         Assert.assertEquals("ciiwxqBGtToBP@1a", giveValue(driver));
+        Assert.assertEquals(16, giveValueLength(driver));
 
         setMaster("ASDASDASD", driver);
         setSiteName("GooGLe.Com", driver);
         generate(driver);
         System.out.println(giveValue(driver));
         Assert.assertEquals("XyopArJoNrixg@1a", giveValue(driver));
+        Assert.assertEquals(16, giveValueLength(driver));
 
         setMaster("asdasdasd", driver);
         setSiteName("gOoglE.cOM", driver);
         generate(driver);
         System.out.println(giveValue(driver));
         Assert.assertEquals("P27eztplagEn+@1a", giveValue(driver));
+        Assert.assertEquals(16, giveValueLength(driver));
 
         setMaster("aSDaSdaSD", driver);
         setSiteName("google.com", driver);
         generate(driver);
         System.out.println(giveValue(driver));
         Assert.assertEquals("jv+5t8QkmICK0@1a", giveValue(driver));
+        Assert.assertEquals(16, giveValueLength(driver));
 
         setMaster("asdASDAsD", driver);
         setSiteName("GOOGLE.COM", driver);
         generate(driver);
         System.out.println(giveValue(driver));
         Assert.assertEquals("5M8hfT+iPPgd9@1a", giveValue(driver));
+        Assert.assertEquals(16, giveValueLength(driver));
     }
     @Test
     public void shouldWorkWhenInputNull() {
@@ -137,16 +145,19 @@ public class HWAngel {
         setSiteName("", driver);
         generate(driver);
         Assert.assertEquals("BaefBs8/Z/cm2@1a", giveValue(driver));
+        Assert.assertEquals(16, giveValueLength(driver));
 
         setMaster("text", driver);
         setSiteName("", driver);
         generate(driver);
         Assert.assertEquals("qALs5fRkY5das@1a", giveValue(driver));
+        Assert.assertEquals(16, giveValueLength(driver));
 
         setMaster("", driver);
         setSiteName("text", driver);
         generate(driver);
         Assert.assertEquals("Rct8qzIFl71fx@1a", giveValue(driver));
+        Assert.assertEquals(16, giveValueLength(driver));
     }
     @Test
     public void shouldWorkWhenInputSpaced() {
@@ -154,21 +165,25 @@ public class HWAngel {
         setSiteName("", driver);
         generate(driver);
         Assert.assertEquals("yChD8UVjdMP3X@1a", giveValue(driver));
+        Assert.assertEquals(16, giveValueLength(driver));
 
         setMaster("", driver);
         setSiteName("    ", driver);
         generate(driver);
         Assert.assertEquals("W7ZHoAQxV+oWo@1a", giveValue(driver));
+        Assert.assertEquals(16, giveValueLength(driver));
 
         setMaster("    ", driver);
         setSiteName("text1", driver);
         generate(driver);
         Assert.assertEquals("CqsTf7IUwD7ZW@1a", giveValue(driver));
+        Assert.assertEquals(16, giveValueLength(driver));
 
         setMaster("text1", driver);
         setSiteName("    ", driver);
         generate(driver);
         Assert.assertEquals("vkP/KBX7BcN2e@1a", giveValue(driver));
+        Assert.assertEquals(16, giveValueLength(driver));
     }
     @Test
     public void shouldWorkWhenLargeInputUsed() {
@@ -176,6 +191,7 @@ public class HWAngel {
         setSiteName("bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", driver);
         generate(driver);
         Assert.assertEquals("jFljhvDp1Y9yi@1a", giveValue(driver));
+        Assert.assertEquals(16, giveValueLength(driver));
     }
     @Test
     public void shouldWorkWhenInvalidSymbols() {
@@ -183,5 +199,6 @@ public class HWAngel {
         setSiteName("~!@#$%^&*()_+{}|\":?></\\", driver);
         generate(driver);
         Assert.assertEquals("mWxGz2VYwGgZK@1a", giveValue(driver));
+        Assert.assertEquals(16, giveValueLength(driver));
     }
 }
