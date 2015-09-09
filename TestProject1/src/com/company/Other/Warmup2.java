@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Other;
 
 import org.junit.Test;
 import org.openqa.selenium.By;

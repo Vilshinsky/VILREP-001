@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Other;
 
 import javafx.scene.control.Tab;
 import org.openqa.selenium.By;
