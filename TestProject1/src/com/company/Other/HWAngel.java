@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Other;
 
 import com.company.PageObjects.AngelPage;
 import com.company.PageObjects.TestHelper;
