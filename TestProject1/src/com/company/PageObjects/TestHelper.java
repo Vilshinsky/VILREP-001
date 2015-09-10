@@ -31,7 +31,7 @@ public class TestHelper {
     }
 
     public static WebElement cyclicElementFinding(String target) {
-        for (int i = 0; i < 6; i++)    {
+        for (int i = 0; i < 30; i++)    {
             if (driver.findElements(By.cssSelector(target)).size() > 0) {
                 break;
             }
@@ -54,5 +54,22 @@ public class TestHelper {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+    }
+//    public static boolean isAlreadyGenerated(String expectedGener) {
+//        if(AngelPage.giveValue() == expectedGener) {
+//            return true;
+//        }
+//        cyclicElementFinding();
+//        return false;
+//        }
+
+    public static boolean cyclicMatchWaiting(String expectedGener) {
+        for (int i = 0; i < 30; i++)    {
+            if (AngelPage.giveValue().equals(expectedGener)) {
+                break;
+            }
+            slp(1);
+        }
+        return true;
     }
 }
