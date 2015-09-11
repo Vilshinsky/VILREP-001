@@ -28,7 +28,7 @@ public class AngelPage {
     }
 
     public static void generate() {
-        TestHelper.driver.findElement(By.cssSelector("[type='submit']")).click();
+        TestHelper.driver.findElement(By.cssSelector("tbody tr:nth-child(3) input")).click();
     }
 
     public static String giveValue() {
@@ -50,20 +50,8 @@ public class AngelPage {
     public static void enterKey() {
         TestHelper.driver.findElement(By.cssSelector("tbody tr:nth-child(2) input")).sendKeys(Keys.ENTER);
     }
-    public static boolean masterEnabled() {
-        if(TestHelper.driver.findElement(By.cssSelector("tbody tr:nth-child(1) input")).isEnabled() == true) {
-            return true;
-        }
-        return false;
-    }
-    public static boolean siteEnabled() {
-        if(TestHelper.driver.findElement(By.cssSelector("tbody tr:nth-child(2) input")).isEnabled() == true) {
-            return true;
-        }
-        return false;
-    }
-    public static boolean generatedEnabled() {
-        if(TestHelper.driver.findElement(By.cssSelector("tbody tr:nth-child(2) input")).isEnabled() == true) {
+    public static boolean isElementEnabled(String target) {
+        if(TestHelper.driver.findElement(By.cssSelector(target)).isEnabled()) {
             return true;
         }
         return false;

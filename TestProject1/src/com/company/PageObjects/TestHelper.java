@@ -55,13 +55,6 @@ public class TestHelper {
             e.printStackTrace();
         }
     }
-//    public static boolean isAlreadyGenerated(String expectedGener) {
-//        if(AngelPage.giveValue() == expectedGener) {
-//            return true;
-//        }
-//        cyclicElementFinding();
-//        return false;
-//        }
 
     public static boolean cyclicMatchWaiting(String expectedGener) {
         for (int i = 0; i < 30; i++)    {
