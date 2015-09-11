@@ -31,19 +31,19 @@ public class AngelPage {
         TestHelper.driver.findElement(By.cssSelector("tbody tr:nth-child(3) input")).click();
     }
 
-    public static String giveValue() {
+    public static String getValue() {
         return TestHelper.driver.findElement(By.cssSelector("tbody tr:nth-child(4) input")).getAttribute("value");
     }
 
-    public static int giveValueLength() {
+    public static int getValueLength() {
         return TestHelper.driver.findElement(By.cssSelector("tbody tr:nth-child(4) input")).getAttribute("value").length();
     }
 
-    public static String giveMasterValue() {
+    public static String getMasterValue() {
         return TestHelper.driver.findElement(By.cssSelector("tbody tr:nth-child(1) input")).getAttribute("value");
     }
 
-    public static String giveSiteNameValue() {
+    public static String getSiteNameValue() {
         return TestHelper.driver.findElement(By.cssSelector("tbody tr:nth-child(2) input")).getAttribute("value");
     }
 

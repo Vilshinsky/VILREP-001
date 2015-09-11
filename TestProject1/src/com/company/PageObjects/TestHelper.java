@@ -4,6 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.opera.OperaDriver;
 
 /**
  * Created by Admin on 08.09.15.
@@ -12,18 +15,45 @@ public class TestHelper {
 
     public static WebDriver driver;
 
-    public static void setup() {
+    public static void setupChrome() {
         System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
         driver = new ChromeDriver();
     }
 
-    public static void get(String url) {
-        driver.get(url);
+    public static void setupChromeAndGo(String link) {
+        setupChrome();
+        get(link);
     }
 
-    public static void setupAndGo(String link) {
-        setup();
+    public static void setupFirefox() {
+        driver = new FirefoxDriver();
+    }
+
+    public static void setupFirefoxAndGo(String link) {
+        setupFirefox();
         get(link);
+    }
+
+    public static void setupIE() {
+        driver = new InternetExplorerDriver();
+    }
+
+    public static void setupIEAndGo(String link) {
+        setupIE();
+        get(link);
+    }
+
+    public static void setupOpera() {
+        driver = new OperaDriver();
+    }
+
+    public static void setupOperaAndGo(String link) {
+        setupOpera();
+        get(link);
+    }
+
+    public static void get(String url) {
+        driver.get(url);
     }
 
     public static void quit() {
@@ -54,5 +84,15 @@ public class TestHelper {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+    }
+
+    public static boolean cyclicMatchWaiting(String expected) {
+        for (int i = 0; i < 30; i++)    {
+            if (AngelPage.giveValue().equals(expected)) {
+                break;
+            }
+            TestHelper.slp(1);
+        }
+        return true;
     }
 }
