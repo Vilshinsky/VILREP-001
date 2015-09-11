@@ -55,14 +55,4 @@ public class TestHelper {
             e.printStackTrace();
         }
     }
-
-    public static boolean cyclicMatchWaiting(String expectedGener) {
-        for (int i = 0; i < 30; i++)    {
-            if (AngelPage.giveValue().equals(expectedGener)) {
-                break;
-            }
-            slp(1);
-        }
-        return true;
-    }
 }

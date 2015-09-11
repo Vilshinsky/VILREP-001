@@ -10,7 +10,7 @@ import org.junit.Test;
 public class HWAngel {
     @Before
     public void preconditionsApply() {
-        TestHelper.setupAndGo(AngelPage.pageUrl8);
+        TestHelper.setupAndGo(AngelPage.pageUrl9);
     }
     @After
     public void postconditionsApply() {
@@ -23,7 +23,7 @@ public class HWAngel {
         AngelPage.setSiteName("google.com");
         TestHelper.cyclicElementFinding("tbody tr:nth-child(3) input");
         AngelPage.generate();
-        Assert.assertEquals(true, TestHelper.cyclicMatchWaiting("/1QFaf1lPgO4S@1a"));
+        Assert.assertEquals(true, AngelPage.cyclicMatchWaiting("/1QFaf1lPgO4S@1a"));
         System.out.println(AngelPage.giveValue());
         Assert.assertEquals("/1QFaf1lPgO4S@1a", AngelPage.giveValue());
         Assert.assertEquals(16, AngelPage.giveValueLength());
@@ -34,7 +34,7 @@ public class HWAngel {
         AngelPage.setSiteName("mas1ter");
         TestHelper.cyclicElementFinding("tbody tr:nth-child(3) input");
         AngelPage.generate();
-        Assert.assertEquals(true, TestHelper.cyclicMatchWaiting("ziRQzTjM/KBFG@1a"));
+        Assert.assertEquals(true, AngelPage.cyclicMatchWaiting("ziRQzTjM/KBFG@1a"));
         System.out.println(AngelPage.giveValue());
         Assert.assertEquals("ziRQzTjM/KBFG@1a", AngelPage.giveValue());
         Assert.assertEquals(16, AngelPage.giveValueLength());
@@ -45,7 +45,7 @@ public class HWAngel {
         AngelPage.setSiteName("GOOGLE.COM");
         TestHelper.cyclicElementFinding("tbody tr:nth-child(3) input");
         AngelPage.generate();
-        Assert.assertEquals(true, TestHelper.cyclicMatchWaiting("zgnkRp9Ivvzo8@1a"));
+        Assert.assertEquals(true, AngelPage.cyclicMatchWaiting("zgnkRp9Ivvzo8@1a"));
         System.out.println(AngelPage.giveValue());
         Assert.assertEquals("zgnkRp9Ivvzo8@1a", AngelPage.giveValue());
         Assert.assertEquals(16, AngelPage.giveValueLength());
@@ -56,7 +56,7 @@ public class HWAngel {
         AngelPage.setSiteName("google.com");
         TestHelper.cyclicElementFinding("tbody tr:nth-child(3) input");
         AngelPage.generate();
-        Assert.assertEquals(true, TestHelper.cyclicMatchWaiting("XUjQQ/CBenGJ2@1a"));
+        Assert.assertEquals(true, AngelPage.cyclicMatchWaiting("XUjQQ/CBenGJ2@1a"));
         System.out.println(AngelPage.giveValue());
         Assert.assertEquals("XUjQQ/CBenGJ2@1a", AngelPage.giveValue());
         Assert.assertEquals(16, AngelPage.giveValueLength());
@@ -67,7 +67,7 @@ public class HWAngel {
         AngelPage.setSiteName("google.com");
         TestHelper.cyclicElementFinding("tbody tr:nth-child(3) input");
         AngelPage.generate();
-        Assert.assertEquals(true, TestHelper.cyclicMatchWaiting("4n2vcjq29YAE+@1a"));
+        Assert.assertEquals(true, AngelPage.cyclicMatchWaiting("4n2vcjq29YAE+@1a"));
         System.out.println(AngelPage.giveValue());
         Assert.assertEquals("4n2vcjq29YAE+@1a", AngelPage.giveValue());
         Assert.assertEquals(16, AngelPage.giveValueLength());
@@ -78,7 +78,7 @@ public class HWAngel {
         AngelPage.setSiteName("GOOGLE.COM");
         TestHelper.cyclicElementFinding("tbody tr:nth-child(3) input");
         AngelPage.generate();
-        Assert.assertEquals(true, TestHelper.cyclicMatchWaiting("ciiwxqBGtToBP@1a"));
+        Assert.assertEquals(true, AngelPage.cyclicMatchWaiting("ciiwxqBGtToBP@1a"));
         System.out.println(AngelPage.giveValue());
         Assert.assertEquals("ciiwxqBGtToBP@1a", AngelPage.giveValue());
         Assert.assertEquals(16, AngelPage.giveValueLength());
@@ -89,7 +89,7 @@ public class HWAngel {
         AngelPage.setSiteName("GooGLe.Com");
         TestHelper.cyclicElementFinding("tbody tr:nth-child(3) input");
         AngelPage.generate();
-        Assert.assertEquals(true, TestHelper.cyclicMatchWaiting("XyopArJoNrixg@1a"));
+        Assert.assertEquals(true, AngelPage.cyclicMatchWaiting("XyopArJoNrixg@1a"));
         System.out.println(AngelPage.giveValue());
         Assert.assertEquals("XyopArJoNrixg@1a", AngelPage.giveValue());
         Assert.assertEquals(16, AngelPage.giveValueLength());
@@ -100,7 +100,7 @@ public class HWAngel {
         AngelPage.setSiteName("gOoglE.cOM");
         TestHelper.cyclicElementFinding("tbody tr:nth-child(3) input");
         AngelPage.generate();
-        Assert.assertEquals(true, TestHelper.cyclicMatchWaiting("P27eztplagEn+@1a"));
+        Assert.assertEquals(true, AngelPage.cyclicMatchWaiting("P27eztplagEn+@1a"));
         System.out.println(AngelPage.giveValue());
         Assert.assertEquals("P27eztplagEn+@1a", AngelPage.giveValue());
         Assert.assertEquals(16, AngelPage.giveValueLength());
@@ -111,7 +111,7 @@ public class HWAngel {
         AngelPage.setSiteName("google.com");
         TestHelper.cyclicElementFinding("tbody tr:nth-child(3) input");
         AngelPage.generate();
-        Assert.assertEquals(true, TestHelper.cyclicMatchWaiting("jv+5t8QkmICK0@1a"));
+        Assert.assertEquals(true, AngelPage.cyclicMatchWaiting("jv+5t8QkmICK0@1a"));
         System.out.println(AngelPage.giveValue());
         Assert.assertEquals("jv+5t8QkmICK0@1a", AngelPage.giveValue());
         Assert.assertEquals(16, AngelPage.giveValueLength());
@@ -122,7 +122,7 @@ public class HWAngel {
         AngelPage.setSiteName("GOOGLE.COM");
         TestHelper.cyclicElementFinding("tbody tr:nth-child(3) input");
         AngelPage.generate();
-        Assert.assertEquals(true, TestHelper.cyclicMatchWaiting("5M8hfT+iPPgd9@1a"));
+        Assert.assertEquals(true, AngelPage.cyclicMatchWaiting("5M8hfT+iPPgd9@1a"));
         System.out.println(AngelPage.giveValue());
         Assert.assertEquals("5M8hfT+iPPgd9@1a", AngelPage.giveValue());
         Assert.assertEquals(16, AngelPage.giveValueLength());
@@ -133,7 +133,7 @@ public class HWAngel {
         AngelPage.setSiteName("GoOgLE.COm");
         TestHelper.cyclicElementFinding("tbody tr:nth-child(3) input");
         AngelPage.generate();
-        Assert.assertEquals(true, TestHelper.cyclicMatchWaiting("zMnetSZT+GDzz@1a"));
+        Assert.assertEquals(true, AngelPage.cyclicMatchWaiting("zMnetSZT+GDzz@1a"));
         System.out.println(AngelPage.giveValue());
         Assert.assertEquals("zMnetSZT+GDzz@1a", AngelPage.giveValue());
         Assert.assertEquals(16, AngelPage.giveValueLength());
@@ -144,7 +144,7 @@ public class HWAngel {
         AngelPage.setSiteName("");
         TestHelper.cyclicElementFinding("tbody tr:nth-child(3) input");
         AngelPage.generate();
-        Assert.assertEquals(true, TestHelper.cyclicMatchWaiting("BaefBs8/Z/cm2@1a"));
+        Assert.assertEquals(true, AngelPage.cyclicMatchWaiting("BaefBs8/Z/cm2@1a"));
         Assert.assertEquals("BaefBs8/Z/cm2@1a", AngelPage.giveValue());
         Assert.assertEquals(16, AngelPage.giveValueLength());
     }
@@ -154,7 +154,7 @@ public class HWAngel {
         AngelPage.setSiteName("");
         TestHelper.cyclicElementFinding("tbody tr:nth-child(3) input");
         AngelPage.generate();
-        Assert.assertEquals(true, TestHelper.cyclicMatchWaiting("qALs5fRkY5das@1a"));
+        Assert.assertEquals(true, AngelPage.cyclicMatchWaiting("qALs5fRkY5das@1a"));
         Assert.assertEquals("qALs5fRkY5das@1a", AngelPage.giveValue());
         Assert.assertEquals(16, AngelPage.giveValueLength());
     }
@@ -164,7 +164,7 @@ public class HWAngel {
         AngelPage.setSiteName("text");
         TestHelper.cyclicElementFinding("tbody tr:nth-child(3) input");
         AngelPage.generate();
-        Assert.assertEquals(true, TestHelper.cyclicMatchWaiting("Rct8qzIFl71fx@1a"));
+        Assert.assertEquals(true, AngelPage.cyclicMatchWaiting("Rct8qzIFl71fx@1a"));
         Assert.assertEquals("Rct8qzIFl71fx@1a", AngelPage.giveValue());
         Assert.assertEquals(16, AngelPage.giveValueLength());
     }
@@ -174,7 +174,7 @@ public class HWAngel {
         AngelPage.setSiteName("");
         TestHelper.cyclicElementFinding("tbody tr:nth-child(3) input");
         AngelPage.generate();
-        Assert.assertEquals(true, TestHelper.cyclicMatchWaiting("yChD8UVjdMP3X@1a"));
+        Assert.assertEquals(true, AngelPage.cyclicMatchWaiting("yChD8UVjdMP3X@1a"));
         Assert.assertEquals("yChD8UVjdMP3X@1a", AngelPage.giveValue());
         Assert.assertEquals(16, AngelPage.giveValueLength());
     }
@@ -184,7 +184,7 @@ public class HWAngel {
         AngelPage.setSiteName("    ");
         TestHelper.cyclicElementFinding("tbody tr:nth-child(3) input");
         AngelPage.generate();
-        Assert.assertEquals(true, TestHelper.cyclicMatchWaiting("W7ZHoAQxV+oWo@1a"));
+        Assert.assertEquals(true, AngelPage.cyclicMatchWaiting("W7ZHoAQxV+oWo@1a"));
         Assert.assertEquals("W7ZHoAQxV+oWo@1a", AngelPage.giveValue());
         Assert.assertEquals(16, AngelPage.giveValueLength());
     }
@@ -194,7 +194,7 @@ public class HWAngel {
         AngelPage.setSiteName("text1");
         TestHelper.cyclicElementFinding("tbody tr:nth-child(3) input");
         AngelPage.generate();
-        Assert.assertEquals(true, TestHelper.cyclicMatchWaiting("CqsTf7IUwD7ZW@1a"));
+        Assert.assertEquals(true, AngelPage.cyclicMatchWaiting("CqsTf7IUwD7ZW@1a"));
         Assert.assertEquals("CqsTf7IUwD7ZW@1a", AngelPage.giveValue());
         Assert.assertEquals(16, AngelPage.giveValueLength());
     }
@@ -204,7 +204,7 @@ public class HWAngel {
         AngelPage.setSiteName("    ");
         TestHelper.cyclicElementFinding("tbody tr:nth-child(3) input");
         AngelPage.generate();
-        Assert.assertEquals(true, TestHelper.cyclicMatchWaiting("vkP/KBX7BcN2e@1a"));
+        Assert.assertEquals(true, AngelPage.cyclicMatchWaiting("vkP/KBX7BcN2e@1a"));
         Assert.assertEquals("vkP/KBX7BcN2e@1a", AngelPage.giveValue());
         Assert.assertEquals(16, AngelPage.giveValueLength());
     }
@@ -214,7 +214,7 @@ public class HWAngel {
         AngelPage.setSiteName("bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb");
         TestHelper.cyclicElementFinding("tbody tr:nth-child(3) input");
         AngelPage.generate();
-        Assert.assertEquals(true, TestHelper.cyclicMatchWaiting("jFljhvDp1Y9yi@1a"));
+        Assert.assertEquals(true, AngelPage.cyclicMatchWaiting("jFljhvDp1Y9yi@1a"));
         Assert.assertEquals("jFljhvDp1Y9yi@1a", AngelPage.giveValue());
         Assert.assertEquals(16, AngelPage.giveValueLength());
     }
@@ -224,7 +224,7 @@ public class HWAngel {
         AngelPage.setSiteName("~!@#$%^&*()_+{}|\":?></\\");
         TestHelper.cyclicElementFinding("tbody tr:nth-child(3) input");
         AngelPage.generate();
-        Assert.assertEquals(true, TestHelper.cyclicMatchWaiting("mWxGz2VYwGgZK@1a"));
+        Assert.assertEquals(true, AngelPage.cyclicMatchWaiting("mWxGz2VYwGgZK@1a"));
         Assert.assertEquals("mWxGz2VYwGgZK@1a", AngelPage.giveValue());
         Assert.assertEquals(16, AngelPage.giveValueLength());
     }
