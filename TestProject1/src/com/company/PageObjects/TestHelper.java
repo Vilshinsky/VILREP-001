@@ -1,12 +1,11 @@
 package com.company.PageObjects;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.opera.OperaDriver;
+import org.openqa.selenium.security.Credentials;
 
 /**
  * Created by Admin on 08.09.15.
@@ -78,9 +77,9 @@ public class TestHelper {
         }
     }
 
-    public static void slpsec (long sec) {
+    public static void slpmlsec (long sec) {
         try {
-            Thread.sleep(sec*1000);
+            Thread.sleep(sec*100);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -88,11 +87,29 @@ public class TestHelper {
 
     public static boolean cyclicMatchWaiting(String expected) {
         for (int i = 0; i < 30; i++)    {
-            if (AngelPage.giveValue().equals(expected)) {
+            if (AngelPage.getValue().equals(expected)) {
                 break;
             }
             TestHelper.slp(1);
         }
         return true;
     }
+
+    public static boolean isAlertPresent() {
+        try{driver.switchTo().alert();
+            return true;
+        } catch(NoAlertPresentException ex) {
+            return false;
+        }
+    }
+
+    public static void handleAlert() {
+        if(isAlertPresent()) {
+
+        }
+        slpmlsec(2);
+        Alert alert = driver.switchTo().alert();
+        alert.accept();
+    }
+
 }

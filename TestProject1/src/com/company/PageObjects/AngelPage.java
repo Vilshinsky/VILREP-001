@@ -70,7 +70,7 @@ public class AngelPage {
     }
     public static boolean cyclicMatchWaiting(String expectedGener) {
         for (int i = 0; i < 30; i++)    {
-            if (AngelPage.giveValue().equals(expectedGener)) {
+            if (AngelPage.getValue().equals(expectedGener)) {
                 break;
             }
             TestHelper.slp(1);
