@@ -1,12 +1,13 @@
 package com.company.PageObjects;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.opera.OperaDriver;
+
+import java.io.File;
 
 /**
  * Created by Admin on 08.09.15.
@@ -88,11 +89,32 @@ public class TestHelper {
 
     public static boolean cyclicMatchWaiting(String expected) {
         for (int i = 0; i < 30; i++)    {
-            if (AngelPage.giveValue().equals(expected)) {
+            if (AngelPage.getValue().equals(expected)) {
                 break;
             }
             TestHelper.slp(1);
         }
         return true;
+    }
+
+    public static void takeScr()
+    {
+        try {
+            File scrFile =
+                    ((TakesScreenshot)TestHelper.driver).getScreenshotAs(OutputType.FILE);
+            FileUtils.copyFile(scrFile, new
+                    File("C:\\tmp\\scr.png"));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    public static void setDimension800x600() {
+        driver.manage().window().setSize(new Dimension(800, 600));
+    }
+    public static void setDimension1024x768() {
+        driver.manage().window().setSize(new Dimension(1024, 768));
+    }
+    public static void setDimensionFullscreen() {
+        driver.manage().window().maximize();
     }
 }
