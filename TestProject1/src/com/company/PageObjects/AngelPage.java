@@ -7,7 +7,7 @@ import org.openqa.selenium.Keys;
  * Created by Admin on 08.09.15.
  */
 public class AngelPage {
-    public static String pageUrl = "http://angel.net/~nic/passwd.current.html";
+    public static String pageUrl1 = "http://angel.net/~nic/passwd.current.html";
     public static String pageUrl2 = "http://oxogamestudio.com/passwd.current2.htm";
     public static String pageUrl3 = "http://oxogamestudio.com/passwd.current3.htm";
     public static String pageUrl4 = "http://oxogamestudio.com/passwd.current4.htm";
