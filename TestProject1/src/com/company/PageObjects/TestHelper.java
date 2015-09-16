@@ -1,11 +1,14 @@
 package com.company.PageObjects;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.security.Credentials;
+
+import java.io.File;
 
 /**
  * Created by Admin on 08.09.15.
@@ -111,5 +114,15 @@ public class TestHelper {
         Alert alert = driver.switchTo().alert();
         alert.accept();
     }
-
+    public void takeScr()
+    {
+        try {
+            File scrFile =
+                    ((TakesScreenshot)TestHelper.driver).getScreenshotAs(OutputType.FILE);
+            FileUtils.copyFile(scrFile, new
+                    File("c:\\tmp\\src.png"));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }

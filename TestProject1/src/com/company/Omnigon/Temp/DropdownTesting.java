@@ -1,4 +1,4 @@
-package com.company.Omnigon;
+package com.company.Omnigon.Temp;
 
 import org.junit.Test;
 import org.openqa.selenium.By;
