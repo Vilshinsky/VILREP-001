@@ -1,13 +1,11 @@
 package com.company.PageObjects;
 
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.opera.OperaDriver;
-
-import java.io.File;
+import org.openqa.selenium.security.Credentials;
 
 /**
  * Created by Admin on 08.09.15.
@@ -79,9 +77,9 @@ public class TestHelper {
         }
     }
 
-    public static void slpsec (long sec) {
+    public static void slpmlsec (long sec) {
         try {
-            Thread.sleep(sec*1000);
+            Thread.sleep(sec*100);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -97,24 +95,21 @@ public class TestHelper {
         return true;
     }
 
-    public static void takeScr()
-    {
-        try {
-            File scrFile =
-                    ((TakesScreenshot)TestHelper.driver).getScreenshotAs(OutputType.FILE);
-            FileUtils.copyFile(scrFile, new
-                    File("C:\\tmp\\scr.png"));
-        } catch (Exception e) {
-            e.printStackTrace();
+    public static boolean isAlertPresent() {
+        try{driver.switchTo().alert();
+            return true;
+        } catch(NoAlertPresentException ex) {
+            return false;
         }
     }
-    public static void setDimension800x600() {
-        driver.manage().window().setSize(new Dimension(800, 600));
+
+    public static void handleAlert() {
+        if(isAlertPresent()) {
+
+        }
+        slpmlsec(2);
+        Alert alert = driver.switchTo().alert();
+        alert.accept();
     }
-    public static void setDimension1024x768() {
-        driver.manage().window().setSize(new Dimension(1024, 768));
-    }
-    public static void setDimensionFullscreen() {
-        driver.manage().window().maximize();
-    }
+
 }
