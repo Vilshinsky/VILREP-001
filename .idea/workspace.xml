@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5badfcf7-454c-4d2c-a4b1-73abdab3a6c7" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestProject1/src/com/company/PageObjects/HWAngel.java" afterPath="$PROJECT_DIR$/TestProject1/src/com/company/PageObjects/HWAngel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestProject1/src/com/company/PageObjects/TestHelper.java" afterPath="$PROJECT_DIR$/TestProject1/src/com/company/PageObjects/TestHelper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -51,21 +52,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestHelper.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestHelper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/PageObjects/TestHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6008316" vertical-offset="0" max-vertical-offset="2414">
-              <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2499">
+              <caret line="30" column="40" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HWAngel.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HWAngel.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/PageObjects/HWAngel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4964">
-              <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.2542735" vertical-offset="0" max-vertical-offset="4964">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -197,6 +198,7 @@
         <option value="$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Page/PGATGigya.java" />
         <option value="$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PGT150TitlesIsCapitalised.java" />
         <option value="$PROJECT_DIR$/TestProject1/src/com/company/PageObjects/TestHelper.java" />
+        <option value="$PROJECT_DIR$/TestProject1/src/com/company/PageObjects/HWAngel.java" />
       </list>
     </option>
   </component>
@@ -893,7 +895,13 @@
       <option name="project" value="LOCAL" />
       <updated>1442508633828</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Merge branch 'master' of https://github.com/Vilshinsky/VILREP-001&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;">
+      <created>1442509005140</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1442509005140</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1387,18 +1395,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/PageObjects/HWAngel.java">
+    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/PageObjects/TestHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4964">
-          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2499">
+          <caret line="30" column="40" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/PageObjects/TestHelper.java">
+    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/PageObjects/HWAngel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6008316" vertical-offset="0" max-vertical-offset="2414">
-          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.2542735" vertical-offset="0" max-vertical-offset="4964">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>

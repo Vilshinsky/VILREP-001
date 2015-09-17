@@ -20,12 +20,17 @@ public class TestHelper {
     public static WebDriver driver;
 
     public static void setupChrome() {
-        System.setProperty("webdriver.chrome.driver", "usr/local/bin/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
         driver = new ChromeDriver();
     }
 
     public static void setupChromeAndGo(String link) {
         setupChrome();
+        get(link);
+    }
+    public static void setupChromeAndGoToCI(String link) {
+        System.setProperty("webdriver.chrome.driver", "usr/local/bin/chromedriver.exe");
+        driver = new ChromeDriver();
         get(link);
     }
 
