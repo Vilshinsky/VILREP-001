@@ -2,8 +2,6 @@ package com.company.Omnigon.Page;
 
 import com.company.PageObjects.TestHelper;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
@@ -11,7 +9,6 @@ import org.openqa.selenium.support.ui.Select;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.GregorianCalendar;
 
 /**
  * Created by Omnigon on 9/16/2015.
@@ -46,10 +43,12 @@ public class PGATGigya {
     }
     public static void passAuthorizationAndGoToProfile() {
         goToAuthorization();
-        TestHelper.cyclicElementFindingByXpath("//*[@id='gigya-login-form']//input[@name='username']").sendKeys(newLogin + "@testmail.com");
+        TestHelper.cyclicElementFindingByXpath("//*[@id='gigya-login-form']//input[@name='username']").sendKeys(newLogin);
         TestHelper.cyclicElementFindingByXpath("//*[@id='gigya-login-form']//input[@name='password']").sendKeys("123123123");
         TestHelper.cyclicElementFindingByXpath("//*[@id='gigya-login-form']//input[@class='gigya-input-submit']").click();
+        TestHelper.slp(2);
         cursorOverAvatar();
+        TestHelper.slp(2);
         TestHelper.cyclicElementFindingByXpath("//a[text()='Manage profile']").click();
     }
     public static String generateNewLoginValue() {
@@ -58,7 +57,7 @@ public class PGATGigya {
         String FinalDate = dateFormat.format(date);
         return FinalDate;
     }
-    public static String newLogin = generateNewLoginValue();
+    public static String newLogin = generateNewLoginValue() + "@testmail.com";
 
     //REGISTRATION STEP 1
     public static String checkRegistrationTitle() {
@@ -74,12 +73,12 @@ public class PGATGigya {
     public static String checkRegistrationSubTitle13() {
         return TestHelper.cyclicElementFindingByXpath("//*[@id='gigya-r-form1']/div/label[3]").getText();
     }
-    public static void fillRegistrationForm() {
+    public static void fillRegistrationForm1() {
         TestHelper.slp(5);
         TestHelper.cyclicElementFindingByXpath("//*[@class='wrapper']/*[contains(@class,'login-button')]").click();
         TestHelper.cyclicElementFindingByXpath("//*[@id='gigya-login-form']//a[text()='Click here ']").click();
         TestHelper.cyclicElementFindingByXpath("//*[@id='gigya-register-screen']//input[@name='email']")
-                .sendKeys(newLogin + "@testmail.com");
+                .sendKeys(newLogin);
         TestHelper.cyclicElementFindingByXpath("//*[@id='gigya-register-screen']//input[@name='profile.firstName']").sendKeys("Firstname");
         TestHelper.cyclicElementFindingByXpath("//*[@id='gigya-register-screen']//input[@name='profile.lastName']").sendKeys("Lastname");
         TestHelper.cyclicElementFindingByXpath("//*[@id='gigya-register-screen']//input[@name='password']").sendKeys("123123123");
@@ -96,13 +95,20 @@ public class PGATGigya {
         sel.selectByIndex(2);
         select = TestHelper.driver.findElement(By.xpath("//*[@id='gigya-register-screen']//select[@name='profile.country']"));
         sel = new Select(select);
-        sel.selectByIndex(1);
+        sel.selectByIndex(2);
         TestHelper.cyclicElementFindingByXpath("//*[@id='gigya-r-form1']//span[@class='gigya-input-button blue right']").click();
         TestHelper.cyclicElementFindingByXpath("//*[@id='gigya-r-form2']//span[@class='gigya-input-button blue right']").click();
         TestHelper.cyclicElementFindingByXpath("//*[@id='submitFavoritePlayer']").click();
     }
+    public static void fillRegistrationForm2() {
+        TestHelper.cyclicElementFindingByXpath("//*[@id='gigya-r-form2']//span[@class='gigya-input-button blue right']").click();
+    }
+    public static void fillRegistrationForm3() {
+        TestHelper.cyclicElementFindingByXpath("//*[@id='submitFavoritePlayer']").click();
+    }
     public static void AccountLogOut() {
         cursorOverAvatar();
+        TestHelper.slp(1);
         TestHelper.cyclicElementFindingByXpath("//a[@data-action='logout']").click();
     }
     //REGISTRATION STEP 2

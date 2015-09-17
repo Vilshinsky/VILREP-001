@@ -1,7 +1,5 @@
-package com.company.Other;
+package com.company.PageObjects;
 
-import com.company.PageObjects.AngelPage;
-import com.company.PageObjects.TestHelper;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
