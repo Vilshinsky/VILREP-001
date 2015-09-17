@@ -29,7 +29,7 @@ public class TestHelper {
         get(link);
     }
     public static void setupChromeAndGoToCI(String link) {
-        System.setProperty("webdriver.chrome.driver", "usr/local/bin/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver.exe");
         driver = new ChromeDriver();
         get(link);
     }
