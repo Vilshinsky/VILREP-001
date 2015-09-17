@@ -1,4 +1,4 @@
-package com.company.Omnigon.Temp;
+package com.company.Omnigon;
 
 import org.junit.Before;
 import org.junit.Test;

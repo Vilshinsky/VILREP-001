@@ -9,6 +9,9 @@ import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.security.Credentials;
 
 import java.io.File;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
  * Created by Admin on 08.09.15.
@@ -62,7 +65,17 @@ public class TestHelper {
         driver.quit();
     }
 
-    public static WebElement cyclicElementFinding(String target) {
+    public static WebElement cyclicElementFindingById(String target) {
+        for (int i = 0; i < 30; i++)    {
+            if (driver.findElements(By.id(target)).size() > 0) {
+                break;
+            }
+            slp(1);
+        }
+        return driver.findElement(By.id(target));
+    }
+
+    public static WebElement cyclicElementFindingByCss(String target) {
         for (int i = 0; i < 30; i++)    {
             if (driver.findElements(By.cssSelector(target)).size() > 0) {
                 break;
@@ -70,6 +83,16 @@ public class TestHelper {
             slp(1);
         }
         return driver.findElement(By.cssSelector(target));
+    }
+
+    public static WebElement cyclicElementFindingByXpath(String target) {
+        for (int i = 0; i < 30; i++)    {
+            if (driver.findElements(By.xpath(target)).size() > 0) {
+                break;
+            }
+            slp(1);
+        }
+        return driver.findElement(By.xpath(target));
     }
 
     public static void slp (long msec) {
@@ -124,5 +147,11 @@ public class TestHelper {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+    public static String generateStringValue() {
+        DateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmssms");
+        Date date = new Date();
+        String FinalDate = dateFormat.format(date);
+        return FinalDate;
     }
 }

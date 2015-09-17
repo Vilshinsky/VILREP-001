@@ -46,38 +46,40 @@ public class AngelPage {
     }
 
     public static int getValueLength() {
-        return TestHelper.driver.findElement(By.cssSelector(generatedValueSel)).getAttribute("value").length();
+        return getValue().length();
     }
 
     public static String getMasterValue() {
-        return TestHelper.driver.findElement(By.cssSelector(siteSel)).getAttribute("value");
+        return TestHelper.driver.findElement(By.cssSelector(masterSel)).getAttribute("value");
     }
 
     public static String getSiteNameValue() {
         return TestHelper.driver.findElement(By.cssSelector(siteSel)).getAttribute("value");
     }
 
-    public static void enterKey() {
-        TestHelper.driver.findElement(By.cssSelector(siteSel)).sendKeys(Keys.ENTER);
-    }
     public static boolean isElementEnabled(String target) {
         if(TestHelper.driver.findElement(By.cssSelector(target)).isEnabled()) {
             return true;
         }
         return false;
     }
+
     public static String masterTitle() {
         return TestHelper.driver.findElement(By.cssSelector(masterTitleSel)).getText();
     }
+
     public static String siteTitle() {
         return TestHelper.driver.findElement(By.cssSelector(siteTitleSel)).getText();
     }
+
     public static String generatedTitle() {
         return TestHelper.driver.findElement(By.cssSelector(generatedTitleSel)).getText();
     }
+
     public static String generateButtonTitle() {
         return TestHelper.driver.findElement(By.cssSelector(generateTitleSel)).getAttribute("value");
     }
+
     public static boolean cyclicMatchWaiting(String expectedGener) {
         for (int i = 0; i < 30; i++)    {
             if (AngelPage.getValue().equals(expectedGener)) {

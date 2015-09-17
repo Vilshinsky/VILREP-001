@@ -1,4 +1,4 @@
-package com.company.Omnigon.Temp;
+package com.company.Omnigon;
 
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -30,7 +30,7 @@ public class DropdownTesting {
 //        WebDriver driver = new FirefoxDriver();
 //        driver.get("http://qa-www.pgatour.ctmsp.com/");
 //        driver.findElement(By.cssSelector(".header-btn")).click();
-//        cyclicElementFinding("//*[@class='drillDownMenu l-drillDown']//a[@class='login-button']", driver);
+//        cyclicElementFindingByCss("//*[@class='drillDownMenu l-drillDown']//a[@class='login-button']", driver);
 //        driver.findElement(By.xpath("//ul[@class='nav nav-tabs hidden-small']//a[contains(text(),'CHAMPIONS TOUR')]")).click();
 //    }
     @Test
