@@ -6,7 +6,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.opera.OperaDriver;
-import org.openqa.selenium.security.Credentials;
 
 import java.io.File;
 import java.text.DateFormat;
@@ -21,7 +20,7 @@ public class TestHelper {
     public static WebDriver driver;
 
     public static void setupChrome() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "usr/local/bin/chromedriver.exe");
         driver = new ChromeDriver();
     }
 
