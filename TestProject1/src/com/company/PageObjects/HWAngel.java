@@ -8,7 +8,7 @@ import org.junit.Test;
 public class HWAngel {
     @Before
     public void preconditionsApply() {
-        TestHelper.setupChromeAndGoToCI(AngelPage.pageUrl1);
+        TestHelper.setupChromeAndGo(AngelPage.pageUrl1);
     }
 
     @After

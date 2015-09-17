@@ -1,7 +1,6 @@
 package com.company.PageObjects;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 
 /**
  * Created by Admin on 08.09.15.
@@ -20,7 +19,7 @@ public class AngelPage {
     private static String masterSel = "tbody tr:nth-child(1) input";
     private static String siteSel = "tbody tr:nth-child(2) input";
     private static String generateSel = "tbody tr:nth-child(3) input";
-    private static String generatedValueSel = "tbody tr:nth-child(3) input";
+    private static String generatedValueSel = "tbody tr:nth-child(4) input";
 
     private static String masterTitleSel = "tbody tr:nth-child(1) td:nth-child(1)";
     private static String siteTitleSel = "tbody tr:nth-child(2) td:nth-child(1)";
@@ -38,7 +37,7 @@ public class AngelPage {
     }
 
     public static void generate() {
-        TestHelper.driver.findElement(By.cssSelector(generateSel)).click();
+        TestHelper.cyclicElementFindingByCss(generateSel).click();
     }
 
     public static String getValue() {
@@ -81,7 +80,7 @@ public class AngelPage {
     }
 
     public static boolean cyclicMatchWaiting(String expectedGener) {
-        for (int i = 0; i < 30; i++)    {
+        for (int i = 0; i < 5; i++)    {
             if (AngelPage.getValue().equals(expectedGener)) {
                 break;
             }
