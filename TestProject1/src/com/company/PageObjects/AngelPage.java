@@ -21,10 +21,10 @@ public class AngelPage {
     private static String generateSel = "tbody tr:nth-child(3) input";
     private static String generatedValueSel = "tbody tr:nth-child(4) input";
 
-    private static String masterTitleSel = "tbody tr:nth-child(1) td:nth-child(1)";
-    private static String siteTitleSel = "tbody tr:nth-child(2) td:nth-child(1)";
-    private static String generatedTitleSel = "tbody tr:nth-child(4) td:nth-child(1)";
-    private static String generateTitleSel = "tbody tr:nth-child(3) td:nth-child(1)";
+    private static String masterTitleSel = "tbody tr:nth-child(1)>td:nth-child(1)";
+    private static String siteTitleSel = "tbody tr:nth-child(2)>td:nth-child(1)";
+    private static String generatedTitleSel = "tbody tr:nth-child(4)>td:nth-child(1)";
+    private static String generateTitleSel = "tbody tr:nth-child(3)>td>input";
 
     public static void setMaster (String value) {
         TestHelper.driver.findElement(By.cssSelector(masterSel)).clear();
