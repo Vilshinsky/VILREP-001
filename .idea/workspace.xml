@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5badfcf7-454c-4d2c-a4b1-73abdab3a6c7" name="Default" comment="Merge branch 'master' of https://github.com/Vilshinsky/VILREP-001&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestProject1/src/com/company/PageObjects/AngelPage.java" afterPath="$PROJECT_DIR$/TestProject1/src/com/company/PageObjects/AngelPage.java" />
+    <list default="true" id="5badfcf7-454c-4d2c-a4b1-73abdab3a6c7" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestProject1/src/com/company/PageObjects/HWAngel.java" afterPath="$PROJECT_DIR$/TestProject1/src/com/company/PageObjects/HWAngel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="VILREP-001.iws" />
@@ -66,12 +66,12 @@
       <file leaf-file-name="HWAngel.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/PageObjects/HWAngel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.5156627" vertical-offset="3716" max-vertical-offset="5049">
-              <caret line="282" column="49" selection-start-line="282" selection-start-column="49" selection-end-line="282" selection-end-column="49" />
+            <state vertical-scroll-proportion="0.29700854" vertical-offset="65" max-vertical-offset="5049">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#204#205#0" expanded="true" />
-                <element signature="e#267#268#0" expanded="true" />
+                <element signature="e#271#272#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -202,8 +202,8 @@
         <option value="$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Page/PGATGigya.java" />
         <option value="$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PGT150TitlesIsCapitalised.java" />
         <option value="$PROJECT_DIR$/TestProject1/src/com/company/PageObjects/TestHelper.java" />
-        <option value="$PROJECT_DIR$/TestProject1/src/com/company/PageObjects/HWAngel.java" />
         <option value="$PROJECT_DIR$/TestProject1/src/com/company/PageObjects/AngelPage.java" />
+        <option value="$PROJECT_DIR$/TestProject1/src/com/company/PageObjects/HWAngel.java" />
       </list>
     </option>
   </component>
@@ -876,7 +876,13 @@
       <option name="project" value="LOCAL" />
       <updated>1442509832750</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Merge branch 'master' of https://github.com/Vilshinsky/VILREP-001&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;">
+      <created>1442510708656</created>
+      <option name="number" value="00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1442510708656</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TodoView">
@@ -892,7 +898,7 @@
     <frame x="-4" y="-4" width="1608" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32847682" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32847682" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893288" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3245033" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -902,7 +908,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41986755" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3986755" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3986755" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32847682" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16623877" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1022,7 +1028,7 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#204#205#0" expanded="true" />
-            <element signature="e#267#268#0" expanded="true" />
+            <element signature="e#271#272#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1115,7 +1121,7 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#204#205#0" expanded="true" />
-            <element signature="e#267#268#0" expanded="true" />
+            <element signature="e#271#272#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1398,12 +1404,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/PageObjects/HWAngel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.5156627" vertical-offset="3716" max-vertical-offset="5049">
-          <caret line="282" column="49" selection-start-line="282" selection-start-column="49" selection-end-line="282" selection-end-column="49" />
+        <state vertical-scroll-proportion="0.29700854" vertical-offset="65" max-vertical-offset="5049">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#204#205#0" expanded="true" />
-            <element signature="e#267#268#0" expanded="true" />
+            <element signature="e#271#272#0" expanded="true" />
           </folding>
         </state>
       </provider>
