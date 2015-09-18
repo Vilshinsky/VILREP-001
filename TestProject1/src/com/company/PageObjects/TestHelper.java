@@ -46,6 +46,11 @@ public class TestHelper {
         get(link);
     }
 
+    public static void setupFirefoxAndGoToCI(String link) {
+        setupFirefox();
+        get(link);
+    }
+
     public static void setupIE() {
         driver = new InternetExplorerDriver();
     }
@@ -55,11 +60,21 @@ public class TestHelper {
         get(link);
     }
 
+    public static void setupIEAndGoToCI(String link) {
+        setupIE();
+        get(link);
+    }
+
     public static void setupOpera() {
         driver = new OperaDriver();
     }
 
     public static void setupOperaAndGo(String link) {
+        setupOpera();
+        get(link);
+    }
+
+    public static void setupOperaAndGoToCI(String link) {
         setupOpera();
         get(link);
     }

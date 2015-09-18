@@ -78,6 +78,7 @@ public class PGATGigya {
         goToRegistrationStep3();
         TestHelper.cyclicElementFindingByXpath("//*[@id='submitFavoritePlayer']").click();
         TestHelper.cyclicElementFindingByXpath("//*[@class='user-menu visible-large']");
+        TestHelper.slp(3);
     }
     public static void cursorOverAvatar() {
         TestHelper.slp(2);
@@ -91,9 +92,8 @@ public class PGATGigya {
         TestHelper.cyclicElementFindingByXpath("//*[@id='gigya-login-form']//input[@class='gigya-input-submit']").click();
     }
     public static void goToFavorites() {
-        TestHelper.slp(2);
+        TestHelper.slp(3);
         cursorOverAvatar();
-        TestHelper.slp(2);
         cyclicWaitingDropdownOpens();
         TestHelper.cyclicElementFindingByXpath("//a[text()='Manage profile']").click();
         TestHelper.cyclicElementFindingByXpath("//*[@id='gigya-profile-form']/div[1]/a[3]").click();

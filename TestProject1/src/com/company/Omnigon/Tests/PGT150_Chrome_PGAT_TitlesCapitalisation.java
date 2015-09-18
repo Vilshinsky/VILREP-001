@@ -8,7 +8,7 @@ import org.openqa.selenium.Dimension;
 /**
  * Created by Omnigon on 9/18/2015.
  */
-public class PGT150_Chrome_TitlesCapitalisation {
+public class PGT150_Chrome_PGAT_TitlesCapitalisation {
     @BeforeClass
     public static void precondition() {
         TestHelper.setupChromeAndGo(PGATGigya.pagePGATQA);
