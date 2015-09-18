@@ -7,6 +7,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.opera.OperaDriver;
 
+import java.awt.*;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
 import java.io.File;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -141,21 +144,50 @@ public class TestHelper {
         Alert alert = driver.switchTo().alert();
         alert.accept();
     }
-    public void takeScr()
+    public void takeScreenshot()
     {
         try {
             File scrFile =
                     ((TakesScreenshot)TestHelper.driver).getScreenshotAs(OutputType.FILE);
             FileUtils.copyFile(scrFile, new
-                    File("c:\\tmp\\src.png"));
+                    File("C:\\Selenium\\Screenshots\\" + generateStringValue() + ".png"));
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
     public static String generateStringValue() {
-        DateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmssms");
+        DateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
         Date date = new Date();
         String FinalDate = dateFormat.format(date);
         return FinalDate;
+    }
+
+    public void attachFile(String path) {
+        setClipboardData(path);
+//native key strokes for CTRL, V and ENTER keys
+        try {
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_CONTROL);
+            robot.keyPress(KeyEvent.VK_V);
+            robot.keyRelease(KeyEvent.VK_V);
+            robot.keyRelease(KeyEvent.VK_CONTROL);
+            robot.keyPress(KeyEvent.VK_ENTER);
+            robot.keyRelease(KeyEvent.VK_ENTER);
+        } catch (AWTException e) {
+            e.printStackTrace();
+        }
+    }
+    public static void setClipboardData(String string) {
+        StringSelection stringSelection = new StringSelection(string);
+        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
+    }
+
+    public static boolean checkValuesEqual(String expected, String actual) {
+        if (expected.equals(actual)) {
+            return true;
+        } else {
+            System.out.println("Expected value: " + expected + " <||>" + " Actual value: " + actual);
+            return false;
+        }
     }
 }
