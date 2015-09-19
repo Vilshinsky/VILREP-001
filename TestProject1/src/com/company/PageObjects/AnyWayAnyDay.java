@@ -37,24 +37,4 @@ public class AnyWayAnyDay {
         TestHelper.cyclicElementFindingByCss(".j-current_culture").click();
         TestHelper.cyclicElementFindingByCss(".j-culture_section .b-drop_down_list-container>li:nth-child(4)>span>span").click();
     }
-    @Test
-    public void robobo() {
-        setClipboardData("C:\\path to file\\example.jpg");
-//native key strokes for CTRL, V and ENTER keys
-        try {
-            Robot robot = new Robot();
-            robot.keyPress(KeyEvent.VK_CONTROL);
-            robot.keyPress(KeyEvent.VK_V);
-            robot.keyRelease(KeyEvent.VK_V);
-            robot.keyRelease(KeyEvent.VK_CONTROL);
-            robot.keyPress(KeyEvent.VK_ENTER);
-            robot.keyRelease(KeyEvent.VK_ENTER);
-        } catch (AWTException e) {
-            e.printStackTrace();
-        }
-    }
-    public static void setClipboardData(String string) {
-        StringSelection stringSelection = new StringSelection(string);
-        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
-    }
 }
