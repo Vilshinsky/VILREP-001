@@ -1,6 +1,6 @@
-package com.company.Other;
+package com.company.QAFactory;
 
-import com.company.PageObjects.TestHelper;
+import com.company.Common.TestHelper;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -27,7 +27,7 @@ public class OsagoPage {
             if (TestHelper.driver.findElements(By.cssSelector("[src='https://strahovator.com.ua/images/logo.png']")).size() > 0) {
                 break;
             }
-            TestHelper.slp(1);
+            TestHelper.waitSec(1);
         }
         return true;
     }

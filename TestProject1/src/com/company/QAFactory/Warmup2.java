@@ -1,12 +1,10 @@
-package com.company.Other;
+package com.company.QAFactory;
 
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.junit.Assert;
-
-import java.util.List;
 
 /**
  * Created by Alexander on 30.08.2015.

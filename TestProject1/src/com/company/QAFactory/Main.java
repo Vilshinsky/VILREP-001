@@ -1,6 +1,4 @@
-package com.company.Other;
-
-import com.sun.org.apache.xpath.internal.SourceTree;
+package com.company.QAFactory;
 
 public class Main {
     // ������� ��������� �����, � ���������� ������� ��� ����� ���������� �� ����.

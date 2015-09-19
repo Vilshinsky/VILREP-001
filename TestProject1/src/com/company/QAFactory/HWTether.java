@@ -1,6 +1,5 @@
-package com.company.Other;
+package com.company.QAFactory;
 
-import javafx.scene.control.Tab;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;

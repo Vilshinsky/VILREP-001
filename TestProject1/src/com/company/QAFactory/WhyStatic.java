@@ -1,4 +1,4 @@
-package com.company.Other;
+package com.company.QAFactory;
 
 /**
  * Created by Admin on 15.09.15.

@@ -1,7 +1,4 @@
-package com.company.Other;
-
-import com.company.PageObjects.TestHelper;
-import org.openqa.selenium.By;
+package com.company.QAFactory;
 
 
 /**

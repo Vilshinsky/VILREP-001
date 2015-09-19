@@ -1,4 +1,4 @@
-package com.company.Other;
+package com.company.QAFactory;
 
 import org.junit.After;
 import org.junit.Assert;
@@ -166,7 +166,7 @@ public class Lesson10 {
 //        name.sendKeys("asdasd");
 //        WebElement submit = driver.findElement(By.cssSelector("[type='submit']"));
 //        submit.click();
-//        slp(2);
+//        waitSec(2);
 //        WebElement gener = driver.findElement(By.cssSelector("[name='password']"));
 //        System.out.println(gener.getAttribute("value"));
 //    }

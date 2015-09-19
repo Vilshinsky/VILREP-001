@@ -1,7 +1,7 @@
 package com.company.Omnigon.Tests;
 
 import com.company.Omnigon.Page.PGATGigya;
-import com.company.PageObjects.TestHelper;
+import com.company.Common.TestHelper;
 import org.junit.*;
 import org.openqa.selenium.Dimension;
 

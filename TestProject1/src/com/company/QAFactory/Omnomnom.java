@@ -1,9 +1,7 @@
-package com.company.Other;
+package com.company.QAFactory;
 
 import org.junit.Assert;
 import org.junit.Test;
-
-import java.util.Arrays;
 
 /**
  * Created by admin on 20.08.15.

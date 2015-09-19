@@ -1,9 +1,8 @@
 package com.company.Omnigon.Tests;
 
 import com.company.Omnigon.Page.PGATGigya;
-import com.company.PageObjects.TestHelper;
+import com.company.Common.TestHelper;
 import org.junit.*;
-import org.openqa.selenium.Dimension;
 
 /**
  * Created by Omnigon on 9/18/2015.
@@ -12,14 +11,14 @@ public class PGT150_Chrome_PCUP_TitlesCapitalisation {
     @BeforeClass
     public static void precondition() {
         TestHelper.setupChromeAndGo(PGATGigya.pagePCUPQA);
-        TestHelper.driver.manage().window().setSize(new Dimension(1212, 900));
+        TestHelper.setResolution(1200, 900);
         PGATGigya.newAccount();
         TestHelper.quit();
     }
     @Before
     public void preconditions() {
         TestHelper.setupChromeAndGo(PGATGigya.pagePCUPQA);
-        TestHelper.driver.manage().window().setSize(new Dimension(1212, 900));
+        TestHelper.setResolution(1200, 900);
     }
     @After
     public void postconditions() {

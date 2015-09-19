@@ -1,5 +1,6 @@
-package com.company.PageObjects;
+package com.company.QAFactory.PageObjects;
 
+import com.company.Common.TestHelper;
 import org.openqa.selenium.By;
 
 /**
@@ -37,7 +38,7 @@ public class AngelPage {
     }
 
     public static void generate() {
-        TestHelper.cyclicElementFindingByCss(generateSel).click();
+        TestHelper.cyclicElementSearchByCss(generateSel).click();
     }
 
     public static String getValue() {
@@ -84,7 +85,7 @@ public class AngelPage {
             if (AngelPage.getValue().equals(expectedGener)) {
                 break;
             }
-            TestHelper.slp(1);
+            TestHelper.waitSec(1);
         }
         return true;
     }

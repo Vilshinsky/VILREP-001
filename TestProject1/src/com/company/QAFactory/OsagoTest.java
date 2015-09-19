@@ -1,6 +1,6 @@
-package com.company.Other;
+package com.company.QAFactory;
 
-import com.company.PageObjects.TestHelper;
+import com.company.Common.TestHelper;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
