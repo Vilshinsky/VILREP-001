@@ -46,6 +46,11 @@ public class TestHelper {
         get(link);
     }
 
+    public static void setupFirefoxAndGoToCI(String link) {
+        setupFirefox();
+        get(link);
+    }
+
     public static void setupIE() {
         driver = new InternetExplorerDriver();
     }
@@ -55,11 +60,21 @@ public class TestHelper {
         get(link);
     }
 
+    public static void setupIEAndGoToCI(String link) {
+        setupIE();
+        get(link);
+    }
+
     public static void setupOpera() {
         driver = new OperaDriver();
     }
 
     public static void setupOperaAndGo(String link) {
+        setupOpera();
+        get(link);
+    }
+
+    public static void setupOperaAndGoToCI(String link) {
         setupOpera();
         get(link);
     }
@@ -144,26 +159,27 @@ public class TestHelper {
         Alert alert = driver.switchTo().alert();
         alert.accept();
     }
-    public void takeScr()
+    public void takeScreenshot()
     {
         try {
             File scrFile =
                     ((TakesScreenshot)TestHelper.driver).getScreenshotAs(OutputType.FILE);
             FileUtils.copyFile(scrFile, new
-                    File("c:\\tmp\\src.png"));
+                    File("C:\\Selenium\\Screenshots\\" + generateStringValue() + ".png"));
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
     public static String generateStringValue() {
-        DateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmssms");
+        DateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
         Date date = new Date();
         String FinalDate = dateFormat.format(date);
         return FinalDate;
     }
 
-    public static void attachFile() {
-        setClipboardData("C:\\path to file\\example.jpg");
+    public void attachFile(String path) {
+        setClipboardData(path);
+//native key strokes for CTRL, V and ENTER keys
         try {
             Robot robot = new Robot();
             robot.keyPress(KeyEvent.VK_CONTROL);
@@ -179,5 +195,14 @@ public class TestHelper {
     public static void setClipboardData(String string) {
         StringSelection stringSelection = new StringSelection(string);
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
+    }
+
+    public static boolean checkValuesEqual(String expected, String actual) {
+        if (expected.equals(actual)) {
+            return true;
+        } else {
+            System.out.println("Expected value: " + expected + " <||>" + " Actual value: " + actual);
+            return false;
+        }
     }
 }
