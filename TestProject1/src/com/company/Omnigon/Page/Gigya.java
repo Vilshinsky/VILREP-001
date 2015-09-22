@@ -27,6 +27,9 @@ public class Gigya {
         TestHelper.cyclicElementSearchByXpath("//*[contains(@class,'user-menu')]");
         TestHelper.waitSec(3);
     }
+    public static void submitRegistration() {
+        TestHelper.cyclicElementSearchByXpath("//*[@id='submitFavoritePlayer']").click();
+    }
     public static void goToAuthorization() {
         TestHelper.waitSec(5);
         TestHelper.cyclicElementSearchByCss(".login-button.log-in").click();
@@ -74,6 +77,44 @@ public class Gigya {
         goToRegistrationStep2();
         TestHelper.cyclicElementSearchByXpath("//*[@id='gigya-r-form2']//span[@class='gigya-input-button blue right']")
                 .click();
+    }
+    public static void addStuartAppleby() {
+        WebElement select = TestHelper.driver.findElement
+                (By.xpath("//*[@id='gigya-r-form3']//*[@name='data.players']"));
+        Select sel = new Select(select);
+        sel.selectByVisibleText("Appleby, Stuart");
+        TestHelper.cyclicElementSearchByXpath("//*[@id='addPlayerButton']").click();
+    }
+    public static void addDaveBarr() {
+        WebElement select = TestHelper.driver.findElement
+                (By.xpath("//*[@id='gigya-r-form3']//*[@name='data.players']"));
+        Select sel = new Select(select);
+        sel.selectByVisibleText("Barr, Dave");
+        TestHelper.cyclicElementSearchByXpath("//*[@id='addPlayerButton']").click();
+    }
+    public static void addTimNorris() {
+        WebElement select = TestHelper.driver.findElement
+                (By.xpath("//*[@id='gigya-r-form3']//*[@name='data.players']"));
+        Select sel = new Select(select);
+        sel.selectByVisibleText("Norris, Tim");
+        TestHelper.cyclicElementSearchByXpath("//*[@id='addPlayerButton']").click();
+    }
+    public static void addThreePlayers() {
+        addStuartAppleby();
+        addDaveBarr();
+        addTimNorris();
+    }
+    public static String checkFirstInList() {
+        return TestHelper.cyclicElementSearchByXpath("//*[@id='myFavoritePlayersList']/following::div[1]")
+                .getText();
+    }
+    public static String checkSecondInList() {
+        return TestHelper.cyclicElementSearchByXpath("//*[@id='myFavoritePlayersList']/following::div[3]")
+                .getText();
+    }
+    public static String checkThirdInList() {
+        return TestHelper.cyclicElementSearchByXpath("//*[@id='myFavoritePlayersList']/following::div[5]")
+                .getText();
     }
     //NEW ACCOUNT
     //SCREENSHOTS
