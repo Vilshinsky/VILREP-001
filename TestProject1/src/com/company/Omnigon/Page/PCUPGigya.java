@@ -3,12 +3,11 @@ package com.company.Omnigon.Page;
 import com.company.Common.TestHelper;
 import org.openqa.selenium.interactions.Actions;
 
-public class PGATGigya {
+public class PCUPGigya {
     public static void goToFavorites() {
-        TestHelper.waitSec(5);
+        TestHelper.waitSec(3);
         cursorOverAvatar();
         cyclicWaitingDropdownOpens();
-        TestHelper.waitMsec(5);
         TestHelper.cyclicElementSearchByXpath("//a[text()='Manage profile']").click();
         TestHelper.cyclicElementSearchByXpath("//*[@id='gigya-profile-form']/div[1]/a[3]").click();
     }

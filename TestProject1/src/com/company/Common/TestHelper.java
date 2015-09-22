@@ -45,6 +45,7 @@ public class TestHelper {
     }
 
     public static void setupIE() {
+        System.setProperty("webdriver.ie.driver", "C:\\Selenium\\IEDriverServer.exe");
         driver = new InternetExplorerDriver();
     }
     public static void setupIEAndGo(String link) {
@@ -89,7 +90,7 @@ public class TestHelper {
     }
 
     public static WebElement cyclicElementSearchById(String target) {
-        for (int i = 0; i < 150; i++)    {
+        for (int i = 0; i < 250; i++)    {
             if (driver.findElements(By.id(target)).size() > 0) {
                 break;
             }
@@ -98,7 +99,7 @@ public class TestHelper {
         return driver.findElement(By.id(target));
     }
     public static WebElement cyclicElementSearchByCss(String target) {
-        for (int i = 0; i < 150; i++)    {
+        for (int i = 0; i < 250; i++)    {
             if (driver.findElements(By.cssSelector(target)).size() > 0) {
                 break;
             }
@@ -107,7 +108,7 @@ public class TestHelper {
         return driver.findElement(By.cssSelector(target));
     }
     public static WebElement cyclicElementSearchByXpath(String target) {
-        for (int i = 0; i < 150; i++)    {
+        for (int i = 0; i < 250; i++)    {
             if (driver.findElements(By.xpath(target)).size() > 0) {
                 break;
             }
@@ -117,7 +118,7 @@ public class TestHelper {
     }
 
     public static WebElement cyclicElementIsDisplayedId(String target) {
-        for (int i = 0; i < 150; i++)    {
+        for (int i = 0; i < 250; i++)    {
             if (TestHelper.cyclicElementSearchById(target).isDisplayed()) {
                 break;
             }
@@ -126,7 +127,7 @@ public class TestHelper {
         return TestHelper.cyclicElementSearchById(target);
     }
     public static WebElement cyclicElementIsDisplayedCss(String target) {
-        for (int i = 0; i < 150; i++)    {
+        for (int i = 0; i < 250; i++)    {
             if (TestHelper.cyclicElementSearchByCss(target).isDisplayed()) {
                 break;
             }
@@ -135,7 +136,7 @@ public class TestHelper {
         return TestHelper.cyclicElementSearchByCss(target);
     }
     public static WebElement cyclicElementIsDisplayedXpath(String target) {
-        for (int i = 0; i < 150; i++)    {
+        for (int i = 0; i < 250; i++)    {
             if (TestHelper.cyclicElementSearchByXpath(target).isDisplayed()) {
                 break;
             }
@@ -153,7 +154,7 @@ public class TestHelper {
         }
     }
     public static boolean cyclicStringEqualityWaitingById(String expected, String actual) {
-        for (int i = 0; i < 150; i++)    {
+        for (int i = 0; i < 250; i++)    {
             if (driver.findElement(By.id(actual)).getAttribute("value").equals(expected)) {
                 break;
             }
@@ -162,7 +163,7 @@ public class TestHelper {
         return true;
     }
     public static boolean cyclicStringEqualityWaitingByCss(String expected, String actual) {
-        for (int i = 0; i < 150; i++)    {
+        for (int i = 0; i < 250; i++)    {
             if (driver.findElement(By.cssSelector(actual)).getAttribute("value").equals(expected)) {
                 break;
             }
@@ -171,7 +172,7 @@ public class TestHelper {
         return true;
     }
     public static boolean cyclicStringEqualityWaitingByXpath(String expected, String actual) {
-        for (int i = 0; i < 150; i++)    {
+        for (int i = 0; i < 250; i++)    {
             if (driver.findElement(By.xpath(actual)).getAttribute("value").equals(expected)) {
                 break;
             }
