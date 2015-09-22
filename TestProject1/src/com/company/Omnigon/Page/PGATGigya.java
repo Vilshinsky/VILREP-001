@@ -57,16 +57,20 @@ public class PGATGigya {
                 .sendKeys("123123123");
         TestHelper.cyclicElementSearchByXpath("//*[@id='gigya-register-screen']//input[@name='data.terms']")
                 .click();
-        WebElement select = TestHelper.driver.findElement(By.xpath("//*[@id='gigya-register-screen']//select[@name='profile.birthYear']"));
+        WebElement select = TestHelper.driver.findElement
+                (By.xpath("//*[@id='gigya-register-screen']//select[@name='profile.birthYear']"));
         Select sel = new Select(select);
         sel.selectByIndex(2);
-        select = TestHelper.driver.findElement(By.xpath("//*[@id='gigya-register-screen']//select[@name='profile.birthMonth']"));
+        select = TestHelper.driver.findElement
+                (By.xpath("//*[@id='gigya-register-screen']//select[@name='profile.birthMonth']"));
         sel = new Select(select);
         sel.selectByIndex(2);
-        select = TestHelper.driver.findElement(By.xpath("//*[@id='gigya-register-screen']//select[@name='profile.birthDay']"));
+        select = TestHelper.driver.findElement
+                (By.xpath("//*[@id='gigya-register-screen']//select[@name='profile.birthDay']"));
         sel = new Select(select);
         sel.selectByIndex(2);
-        select = TestHelper.driver.findElement(By.xpath("//*[@id='gigya-register-screen']//select[@name='profile.country']"));
+        select = TestHelper.driver.findElement
+                (By.xpath("//*[@id='gigya-register-screen']//select[@name='profile.country']"));
         sel = new Select(select);
         sel.selectByIndex(2);
         takeScreenshot();
@@ -74,12 +78,14 @@ public class PGATGigya {
     public static void goToRegistrationStep2() {
         goToRegistrationStep1();
         fillRegistrationForm();
-        TestHelper.cyclicElementSearchByXpath("//*[@id='gigya-r-form1']//span[@class='gigya-input-button blue right']")
+        TestHelper.cyclicElementSearchByXpath
+                ("//*[@id='gigya-r-form1']//span[@class='gigya-input-button blue right']")
                 .click();
     }
     public static void goToRegistrationStep3() {
         goToRegistrationStep2();
-        TestHelper.cyclicElementSearchByXpath("//*[@id='gigya-r-form2']//span[@class='gigya-input-button blue right']")
+        TestHelper.cyclicElementSearchByXpath
+                ("//*[@id='gigya-r-form2']//span[@class='gigya-input-button blue right']")
                 .click();
     }
     public static void newAccount() {
@@ -165,11 +171,13 @@ public class PGATGigya {
                 .getText();
     }
     public static String regForm3Title4() {
-        return TestHelper.cyclicElementSearchByXpath("//*[@id='gigya-r-form3']/div/div[1]/*[contains(@class,'gigya-composite-control')][1]")
+        return TestHelper.cyclicElementSearchByXpath
+                ("//*[@id='gigya-r-form3']/div/div[1]/*[contains(@class,'gigya-composite-control')][1]")
                 .getText();
     }
     public static String regForm3Title5() {
-        return TestHelper.cyclicElementSearchByXpath("//*[@id='gigya-r-form3']/div/div[1]/*[contains(@class,'gigya-composite-control-dropdown')]//span")
+        return TestHelper.cyclicElementSearchByXpath
+                ("//*[@id='gigya-r-form3']/div/div[1]/*[contains(@class,'gigya-composite-control-dropdown')]//span")
                 .getText();
     }
     public static String regForm3Title6() {
@@ -182,11 +190,13 @@ public class PGATGigya {
                 .getText();
     }
     public static String regForm3Title8() {
-        return TestHelper.cyclicElementSearchByXpath("//*[@id='gigya-r-form3']//div[contains(@class,'gigya-composite-control-textbox')]//span")
+        return TestHelper.cyclicElementSearchByXpath
+                ("//*[@id='gigya-r-form3']//div[contains(@class,'gigya-composite-control-textbox')]//span")
                 .getText();
     }
     public static String regForm3Title9() {
-        return TestHelper.cyclicElementSearchByXpath("//*[@id='gigya-r-form3']//div[@class='gigya-layout-cell']/div[3]//span")
+        return TestHelper.cyclicElementSearchByXpath
+                ("//*[@id='gigya-r-form3']//div[@class='gigya-layout-cell']/div[3]//span")
                 .getText();
     }
     public static String profileFavoriteTitle1() {
@@ -210,11 +220,13 @@ public class PGATGigya {
                 .getText();
     }
     public static String profileFavoriteTitle6() {
-        return TestHelper.cyclicElementSearchByXpath("//*[@id='gigya-profile-form3']/div/div[1]/*[contains(@class,'gigya-composite-control')][1]")
+        return TestHelper.cyclicElementSearchByXpath
+                ("//*[@id='gigya-profile-form3']/div/div[1]/*[contains(@class,'gigya-composite-control')][1]")
                 .getText();
     }
     public static String profileFavoriteTitle7() {
-        return TestHelper.cyclicElementSearchByXpath("//*[@id='gigya-profile-form3']/div/div[1]/*[contains(@class,'gigya-composite-control-dropdown')]//span")
+        return TestHelper.cyclicElementSearchByXpath
+                ("//*[@id='gigya-profile-form3']/div/div[1]/*[contains(@class,'gigya-composite-control-dropdown')]//span")
                 .getText();
     }
     public static String profileFavoriteTitle8() {
@@ -226,11 +238,13 @@ public class PGATGigya {
                 .getText();
     }
     public static String profileFavoriteTitle10() {
-        return TestHelper.cyclicElementSearchByXpath("//*[@id='gigya-profile-form3']//div[contains(@class,'gigya-composite-control-textbox')]//span")
+        return TestHelper.cyclicElementSearchByXpath
+                ("//*[@id='gigya-profile-form3']//div[contains(@class,'gigya-composite-control-textbox')]//span")
                 .getText();
     }
     public static String profileFavoriteTitle11() {
-        return TestHelper.cyclicElementSearchByXpath("//*[@id='gigya-profile-form3']//div[@class='gigya-layout-cell']/div[3]//span")
+        return TestHelper.cyclicElementSearchByXpath
+                ("//*[@id='gigya-profile-form3']//div[@class='gigya-layout-cell']/div[3]//span")
                 .getText();
     }
 
@@ -240,11 +254,13 @@ public class PGATGigya {
                 .getText();
     }
     public static String checkLoginSubTitle1() {
-        return TestHelper.cyclicElementSearchByXpath("//*[@id='gigya-login-screen']//*[text()='Login with your social network:']")
+        return TestHelper.cyclicElementSearchByXpath
+                ("//*[@id='gigya-login-screen']//*[text()='Login with your social network:']")
                 .getText();
     }
     public static String checkLoginSubTitle2() {
-        return TestHelper.cyclicElementSearchByXpath("//*[@id='gigya-login-screen']//*[text()='Or, login here:']")
+        return TestHelper.cyclicElementSearchByXpath
+                ("//*[@id='gigya-login-screen']//*[text()='Or, login here:']")
                 .getText();
     }
     public static String checkEmailTitle() {
@@ -252,7 +268,8 @@ public class PGATGigya {
                 .getText();
     }
     public static String checkRegistrationTitle() {
-        return TestHelper.cyclicElementSearchByXpath("//div[@class='gigya-screen-dialog-top']//div[text()='Registration']")
+        return TestHelper.cyclicElementSearchByXpath
+                ("//div[@class='gigya-screen-dialog-top']//div[text()='Registration']")
                 .getText();
     }
 }
