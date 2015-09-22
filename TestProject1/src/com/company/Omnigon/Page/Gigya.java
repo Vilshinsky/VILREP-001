@@ -145,12 +145,11 @@ public class Gigya {
         if(TestHelper.cyclicElementSearchByXpath
                 ("//*[@id='gigya-r-form2']//span[@class='gigya-input-button blue right']")
                 .isDisplayed()) {
-            return true;
-        } else {
             return false;
+        } else {
+            return true;
         }
     }
-
     //SURFING THROUGH REGISTRATION FORM
     //SURFING THROUGH MANAGE PROFILE
     public static void cursorOverAvatar() {
