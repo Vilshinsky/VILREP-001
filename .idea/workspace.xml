@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5badfcf7-454c-4d2c-a4b1-73abdab3a6c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/BookingUzTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/PageObjects/UzPage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Page/Gigya.java" afterPath="$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Page/Gigya.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestProject1/src/com/company/Common/TestHelper.java" afterPath="$PROJECT_DIR$/TestProject1/src/com/company/Common/TestHelper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -18,11 +17,6 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
-  <component name="Commander">
-    <leftPanel />
-    <rightPanel />
-    <splitter proportion="0.5" />
-  </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/VILREP-001$HWAngel_shouldGiveDifferentOutputAfterInversion.coverage" NAME="HWAngel.shouldGiveDifferentOutputAfterInversion Coverage Results" MODIFIED="1441378989225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.company.*</FILTER>
@@ -31,9 +25,6 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="DaemonCodeAnalyzer">
-    <disable_hints />
-  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="ExportTestResults" outputFolder="$PROJECT_DIR$" openResultsInEditor="true" userTempatePath="" />
   <component name="FavoritesManager">
@@ -41,82 +32,49 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Gigya.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Page/Gigya.java">
+      <file leaf-file-name="PGAT_FavoritePlayersAlphabetize_Registration.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG124/PGAT_FavoritePlayersAlphabetize_Registration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1510" max-vertical-offset="5559">
-              <caret line="109" column="5" selection-start-line="109" selection-start-column="5" selection-end-line="109" selection-end-column="5" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+              <folding>
+                <element signature="e#451#452#0" expanded="false" />
+                <element signature="e#484#485#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AngelPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/PageObjects/AngelPage.java">
+      <file leaf-file-name="CHAMP_EmailValidation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG137/CHAMP_EmailValidation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1132" max-vertical-offset="1547">
-              <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="90" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DropdownTesting.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/DropdownTesting.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="799">
-              <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CHAMP_FavoritePlayersAlphabetize_Profile.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG124/CHAMP_FavoritePlayersAlphabetize_Profile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969">
-              <caret line="18" column="78" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="78" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WorldGolfChampionship.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/WorldGolfChampionship.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="3485">
-              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="37" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AnyWayAnyDay.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/PageObjects/AnyWayAnyDay.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="184" max-vertical-offset="663">
-              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UzPage.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/PageObjects/UzPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.50843376" vertical-offset="1353" max-vertical-offset="2261">
-              <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1069#1070#0" expanded="true" />
-                <element signature="e#1158#1159#0" expanded="true" />
-                <element signature="e#2800#2801#0" expanded="true" />
-                <element signature="e#2884#2885#0" expanded="true" />
-                <element signature="e#4533#4534#0" expanded="true" />
-                <element signature="e#4626#4627#0" expanded="true" />
-                <element signature="e#4799#4800#0" expanded="true" />
-                <element signature="e#4896#4897#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gigya.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Page/Gigya.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.23449612">
+              <caret line="72" column="8" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PGAT_EmailValidation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG137/PGAT_EmailValidation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -124,8 +82,8 @@
       <file leaf-file-name="TestHelper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Common/TestHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1358" max-vertical-offset="3791">
-              <caret line="116" column="52" selection-start-line="110" selection-start-column="8" selection-end-line="116" selection-end-column="52" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="204" column="31" selection-start-line="204" selection-start-column="31" selection-end-line="204" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -134,22 +92,43 @@
       <file leaf-file-name="BookingUzTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/BookingUzTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="337" max-vertical-offset="884">
-              <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UzPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/PageObjects/UzPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="137" column="38" selection-start-line="137" selection-start-column="38" selection-end-line="137" selection-end-column="38" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#531#532#0" expanded="true" />
-                <element signature="e#564#565#0" expanded="true" />
+                <element signature="e#5931#5932#0" expanded="true" />
+                <element signature="e#6017#6018#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HWAngel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/PageObjects/HWAngel.java">
+      <file leaf-file-name="PCUP_EmailValidation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG137/PCUP_EmailValidation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="4964">
-              <caret line="25" column="83" selection-start-line="25" selection-start-column="83" selection-end-line="25" selection-end-column="84" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WGC_FavoritePlayersAlphabetize_Registration.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG124/WGC_FavoritePlayersAlphabetize_Registration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -167,6 +146,11 @@
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -188,7 +172,6 @@
         <option value="$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/WorldGolfChampionship.java" />
         <option value="$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/PresidentsCup.java" />
         <option value="$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/PgatLeaderboard.java" />
-        <option value="$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/DropdownTesting.java" />
         <option value="$PROJECT_DIR$/TestProject1/src/com/company/Lessons/Omnomnom.java" />
         <option value="$PROJECT_DIR$/TestProject1/src/com/company/Omnomnom.java" />
         <option value="$PROJECT_DIR$/TestProject1/src/com/company/Lesson10.java" />
@@ -198,20 +181,31 @@
         <option value="$PROJECT_DIR$/TestProject1/src/com/company/PageObjects/OxogamesPage.java" />
         <option value="$PROJECT_DIR$/TestProject1/src/com/company/HWAngel.java" />
         <option value="$PROJECT_DIR$/TestProject1/src/com/company/Other/WhyStatic.java" />
-        <option value="$PROJECT_DIR$/TestProject1/src/com/company/Other/Door.java" />
         <option value="$PROJECT_DIR$/TestProject1/src/com/company/Other/WhyStsticMain.java" />
-        <option value="$PROJECT_DIR$/TestProject1/src/com/company/Other/HWAngel.java" />
-        <option value="$PROJECT_DIR$/TestProject1/src/com/company/Other/OsagoPage.java" />
         <option value="$PROJECT_DIR$/TestProject1/src/com/company/Other/OsagoTest.java" />
-        <option value="$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PGT150TitlesIsCapitalised.java" />
+        <option value="$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/DropdownTesting.java" />
         <option value="$PROJECT_DIR$/TestProject1/src/com/company/PageObjects/AngelPage.java" />
-        <option value="$PROJECT_DIR$/TestProject1/src/com/company/PageObjects/HWAngel.java" />
+        <option value="$PROJECT_DIR$/TestProject1/src/com/company/Other/OsagoPage.java" />
+        <option value="$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Page/PGATHomePage.java" />
+        <option value="$PROJECT_DIR$/TestProject1/src/com/company/Other/HWAngel.java" />
+        <option value="$PROJECT_DIR$/TestProject1/src/com/company/Other/Door.java" />
         <option value="$PROJECT_DIR$/TestProject1/src/com/company/PageObjects/TestHelper.java" />
-        <option value="$PROJECT_DIR$/TestProject1/src/com/company/PageObjects/AnyWayAnyDay.java" />
+        <option value="$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PGT150TitlesIsCapitalised.java" />
         <option value="$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Page/PGATGigya.java" />
+        <option value="$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG124/PGAT_FavoritePlayersAlphabetize.java" />
+        <option value="$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG124/PGAT_FavoritePlayersAlphabetize_Profile.java" />
+        <option value="$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG124/CHAMP_FavoritePlayersAlphabetize_Registration.java" />
+        <option value="$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG124/CHAMP_FavoritePlayersAlphabetize_Profile.java" />
+        <option value="$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG124/PCUP_FavoritePlayersAlphabetize_Profile.java" />
+        <option value="$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG124/PCUP_FavoritePlayersAlphabetize_Registration.java" />
+        <option value="$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG124/WEBCOM_FavoritePlayersAlphabetize_Profile.java" />
+        <option value="$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG124/WEBCOM_FavoritePlayersAlphabetize_Registration.java" />
+        <option value="$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG124/WGC_FavoritePlayersAlphabetize_Profile.java" />
+        <option value="$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG124/WGC_FavoritePlayersAlphabetize_Registration.java" />
+        <option value="$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG124/PGAT_FavoritePlayersAlphabetize_Registration.java" />
+        <option value="$PROJECT_DIR$/TestProject1/src/com/company/Common/TestHelper.java" />
         <option value="$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Page/Gigya.java" />
-        <option value="$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/PageObjects/UzPage.java" />
-        <option value="$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/BookingUzTests.java" />
+        <option value="$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/ScreenshotsTesting.java" />
       </list>
     </option>
   </component>
@@ -222,17 +216,23 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
+  </component>
+  <component name="NamedScopeManager">
+    <order />
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="6" />
-    <option name="y" value="41" />
-    <option name="width" value="1141" />
-    <option name="height" value="878" />
+    <option name="x" value="303" />
+    <option name="y" value="3" />
+    <option name="width" value="1613" />
+    <option name="height" value="1011" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="false" id="Update" />
+    <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
     <ConfirmationsSetting value="2" id="Add" />
@@ -252,6 +252,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -320,11 +321,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="QAFactory" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PageObjects" />
+              <option name="myItemId" value="Omnigon" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -343,6 +340,70 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="company" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Omnigon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VILREP-001" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestProject1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="company" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Omnigon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PTG137" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VILREP-001" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestProject1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="company" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Omnigon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Page" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -371,7 +432,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -384,7 +444,7 @@
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
     <property name="FullScreen" value="false" />
-    <property name="options.lastSelected" value="settings.github" />
+    <property name="options.lastSelected" value="vcs.Git" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="213" />
@@ -410,211 +470,139 @@
       <recent name="com.company.PageObjects.AngelPage" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.company.PageObjects" />
+      <recent name="com.company.Omnigon.Tests" />
+      <recent name="com.company.Omnigon.Page" />
+      <recent name="com.company.Omnigon" />
     </key>
   </component>
-  <component name="RestoreUpdateTree">
-    <UpdateInfo date="Moments ago" ActionInfo="_Update">
-      <UpdatedFiles>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
         <FILE-GROUP>
-          <option name="myUpdateName" value="Updated from server" />
-          <option name="myStatusName" value="Changed on server" />
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CHANGED_ON_SERVER" />
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Updated" />
-            <option name="myStatusName" value="Changed" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="UPDATED" />
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/misc.xml</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/DropdownTesting.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Page/PGATGigya.java</PATH>
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Created" />
-            <option name="myStatusName" value="Created" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="CREATED" />
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Common/TestHelper.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Page/Gigya.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Page/PCUPGigya.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG124/CHAMP_FavoritePlayersAlphabetize_Profile.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG124/CHAMP_FavoritePlayersAlphabetize_Registration.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG124/PCUP_FavoritePlayersAlphabetize_Profile.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG124/PCUP_FavoritePlayersAlphabetize_Registration.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG124/PGAT_FavoritePlayersAlphabetize_Profile.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG124/PGAT_FavoritePlayersAlphabetize_Registration.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG124/WEBCOM_FavoritePlayersAlphabetize_Profile.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG124/WEBCOM_FavoritePlayersAlphabetize_Registration.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG124/WGC_FavoritePlayersAlphabetize_Profile.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG124/WGC_FavoritePlayersAlphabetize_Registration.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG137/CHAMP_EmailValidation.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG137/PCUP_EmailValidation.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG137/PGAT_EmailValidation.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG137/WEBCOM_EmailValidation.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG137/WGC_EmailValidation.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG150/Chrome_PCUP_TitlesCapitalisation_Profile.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG150/Chrome_PCUP_TitlesCapitalisation_Registration.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG150/Chrome_PGAT_TitlesCapitalisation_Profile.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG150/Chrome_PGAT_TitlesCapitalisation_Registration.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG150/Firefox_WEBCOM_TitlesCapitalisation_Profile.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG150/Firefox_WEBCOM_TitlesCapitalisation_Registration.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG150/Firefox_WGC_TitlesCapitalisation_Profile.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG150/Firefox_WGC_TitlesCapitalisation_Registration.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG150/IE_CHAMP_TitlesCapitalisation_Registration.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG150/IE_CHAMP_TitlesCapitalization_Profile.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/AbstractClass.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/Dogtests.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/Door.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/HW6_2.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/HWTether.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/Lesson10.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/Lesson7.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/Lesson8.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/Lesson9.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/LessonSix.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/Main.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/Omnomnom.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/OsagoPage.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/OsagoTest.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/PageObjects/AngelPage.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/PageObjects/AnyWayAnyDay.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/PageObjects/HWAngel.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/Warmup1.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/Warmup2.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/WhyStatic.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/WhyStsticMain.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/Work.java</PATH>
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Deleted" />
-            <option name="myStatusName" value="Deleted" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="true" />
-            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PGT150TitlesIsCapitalised.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Other/AbstractClass.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Other/Dogtests.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Other/Door.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Other/HW6_2.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Other/HWTether.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Other/Lesson10.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Other/Lesson7.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Other/Lesson8.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Other/Lesson9.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Other/LessonSix.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Other/Main.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Other/Omnomnom.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Other/OsagoPage.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Other/OsagoTest.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Other/Warmup1.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Other/Warmup2.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Other/WhyStatic.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Other/WhyStsticMain.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Other/Work.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/PageObjects/AngelPage.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/PageObjects/AnyWayAnyDay.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/PageObjects/HWAngel.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/PageObjects/TestHelper.java</PATH>
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Restored" />
-            <option name="myStatusName" value="Will be restored" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="RESTORED" />
-          </FILE-GROUP>
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/misc.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Page/Gigya.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Page/PCUPGigya.java</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
-          <option name="myUpdateName" value="Modified" />
-          <option name="myStatusName" value="Modified" />
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MODIFIED" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/BookingUzTests.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/PageObjects/UzPage.java</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
-          <option name="myUpdateName" value="Skipped" />
-          <option name="myStatusName" value="Skipped" />
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="SKIPPED" />
+          <option name="myId" value="RESTORED" />
         </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with conflicts" />
-          <option name="myStatusName" value="Will be merged with conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_CONFLICTS" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with tree conflicts" />
-          <option name="myStatusName" value="Merged with tree conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with property conflicts" />
-          <option name="myStatusName" value="Will be merged with property conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged" />
-          <option name="myStatusName" value="Will be merged" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Not in repository" />
-          <option name="myStatusName" value="Not in repository" />
-          <option name="mySupportsDeletion" value="true" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UNKNOWN" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Locally added" />
-          <option name="myStatusName" value="Locally added" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="LOCALLY_ADDED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Locally removed" />
-          <option name="myStatusName" value="Locally removed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="LOCALLY_REMOVED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Switched" />
-          <option name="myStatusName" value="Switched" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="SWITCHED" />
-        </FILE-GROUP>
-      </UpdatedFiles>
-    </UpdateInfo>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
-  <component name="RunManager" selected="JUnit.BookingUzTests.testBlock">
-    <configuration default="false" name="HWAngel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ScreenshotsTesting">
+    <configuration default="false" name="PGAT_FavoritePlayersAlphabetize_Registration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.company.Other.*" />
+          <option name="PATTERN" value="com.company.Omnigon.Tests.PTG124.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="TestProject1" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.company.PageObjects" />
-      <option name="MAIN_CLASS_NAME" value="com.company.PageObjects.HWAngel" />
+      <option name="PACKAGE_NAME" value="com.company.Omnigon.Tests.PTG124" />
+      <option name="MAIN_CLASS_NAME" value="com.company.Omnigon.Tests.PTG124.PGAT_FavoritePlayersAlphabetize_Registration" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -627,11 +615,9 @@
       </option>
       <envs />
       <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="PCUP_EmailValidation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="com.company.Omnigon.Tests.PTG137 in TestProject1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.company.Omnigon.Tests.PTG137.*" />
@@ -642,9 +628,9 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.company.Omnigon.Tests.PTG137" />
-      <option name="MAIN_CLASS_NAME" value="com.company.Omnigon.Tests.PTG137.PCUP_EmailValidation" />
+      <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -655,64 +641,6 @@
       </option>
       <envs />
       <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="WGC_EmailValidation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.company.Omnigon.Tests.PTG137.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="TestProject1" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.company.Omnigon.Tests.PTG137" />
-      <option name="MAIN_CLASS_NAME" value="com.company.Omnigon.Tests.PTG137.WGC_EmailValidation" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="BookingUzTests.testBlock" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.company.QAFactory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="TestProject1" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.company.QAFactory" />
-      <option name="MAIN_CLASS_NAME" value="com.company.QAFactory.BookingUzTests" />
-      <option name="METHOD_NAME" value="testBlock" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
     <configuration default="false" name="BookingUzTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -739,17 +667,20 @@
       </option>
       <envs />
       <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
+    <configuration default="false" name="PCUP_EmailValidation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.company.Omnigon.Tests.PTG137.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="TestProject1" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
+      <option name="PACKAGE_NAME" value="com.company.Omnigon.Tests.PTG137" />
+      <option name="MAIN_CLASS_NAME" value="com.company.Omnigon.Tests.PTG137.PCUP_EmailValidation" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -764,12 +695,36 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
+    <configuration default="false" name="ScreenshotsTesting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.company.QAFactory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="TestProject1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.company.QAFactory" />
+      <option name="MAIN_CLASS_NAME" value="com.company.QAFactory.ScreenshotsTesting" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
       <method />
     </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -813,6 +768,30 @@
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -829,23 +808,25 @@
       </ExternalSystemSettings>
       <method />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="JarApplication" factoryName="JAR Application">
@@ -853,19 +834,12 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -896,20 +870,20 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="false" name="AnyWayAnyDay.test1" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+    <configuration default="false" name="HWAngel" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.company.PageObjects.*" />
+          <option name="PATTERN" value="com.company.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="TestProject1" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.company.PageObjects" />
-      <option name="MAIN_CLASS_NAME" value="com.company.PageObjects.AnyWayAnyDay" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.HWAngel" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -924,50 +898,21 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="HWAngel.correctInputTitlesBeforeAction" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.company.PageObjects.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="TestProject1" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.company.PageObjects" />
-      <option name="MAIN_CLASS_NAME" value="com.company.PageObjects.HWAngel" />
-      <option name="METHOD_NAME" value="correctInputTitlesBeforeAction" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <list size="7">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.AnyWayAnyDay.test1" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.HWAngel.correctInputTitlesBeforeAction" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.HWAngel" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.PCUP_EmailValidation" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.WGC_EmailValidation" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.BookingUzTests.testBlock" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.BookingUzTests" />
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.HWAngel" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.PGAT_FavoritePlayersAlphabetize_Registration" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.com.company.Omnigon.Tests.PTG137 in TestProject1" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.BookingUzTests" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.PCUP_EmailValidation" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.ScreenshotsTesting" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.BookingUzTests.testBlock" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.BookingUzTests" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.WGC_EmailValidation" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.PCUP_EmailValidation" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.HWAngel" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ScreenshotsTesting" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.com.company.Omnigon.Tests.PTG137 in TestProject1" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.PCUP_EmailValidation" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.BookingUzTests" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.PGAT_FavoritePlayersAlphabetize_Registration" />
       </list>
     </recent_temporary>
   </component>
@@ -1067,117 +1012,64 @@
       <updated>1442338914000</updated>
     </task>
     <task id="LOCAL-00015" summary="Merge branch 'master' of https://github.com/Vilshinsky/VILREP-001&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;">
-      <created>1442338963171</created>
+      <created>1442403986972</created>
       <option name="number" value="00015" />
       <option name="project" value="LOCAL" />
-      <updated>1442338963171</updated>
+      <updated>1442403986972</updated>
     </task>
     <task id="LOCAL-00016" summary="Merge branch 'master' of https://github.com/Vilshinsky/VILREP-001&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;">
-      <created>1442508633828</created>
+      <created>1442499972547</created>
       <option name="number" value="00016" />
       <option name="project" value="LOCAL" />
-      <updated>1442508633828</updated>
+      <updated>1442499972547</updated>
     </task>
     <task id="LOCAL-00017" summary="Merge branch 'master' of https://github.com/Vilshinsky/VILREP-001&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;">
-      <created>1442509005140</created>
+      <created>1442931676888</created>
       <option name="number" value="00017" />
       <option name="project" value="LOCAL" />
-      <updated>1442509005140</updated>
+      <updated>1442931676888</updated>
     </task>
-    <task id="LOCAL-00018" summary="Merge branch 'master' of https://github.com/Vilshinsky/VILREP-001&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;">
-      <created>1442509232015</created>
-      <option name="number" value="00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1442509232015</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Merge branch 'master' of https://github.com/Vilshinsky/VILREP-001&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;">
-      <created>1442509832750</created>
-      <option name="number" value="00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1442509832750</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Merge branch 'master' of https://github.com/Vilshinsky/VILREP-001&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;">
-      <created>1442510708656</created>
-      <option name="number" value="00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1442510708656</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Merge branch 'master' of https://github.com/Vilshinsky/VILREP-001&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;">
-      <created>1442510795296</created>
-      <option name="number" value="00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1442510795296</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Merge branch 'master' of https://github.com/Vilshinsky/VILREP-001&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;">
-      <created>1442510925859</created>
-      <option name="number" value="00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1442510925859</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Merge branch 'master' of https://github.com/Vilshinsky/VILREP-001&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;">
-      <created>1442511000125</created>
-      <option name="number" value="00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1442511000125</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Merge branch 'master' of https://github.com/Vilshinsky/VILREP-001&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;">
-      <created>1442513226375</created>
-      <option name="number" value="00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1442513226375</updated>
-    </task>
-    <option name="localTasksCounter" value="25" />
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
-  <component name="TodoView" selected-index="0">
+  <component name="TodoView">
     <todo-panel id="selected-file">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
       <is-autoscroll-to-source value="true" />
     </todo-panel>
     <todo-panel id="all">
       <are-packages-shown value="true" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
       <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="default-changelist">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="false" />
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="6" y="41" width="1141" height="878" extended-state="0" />
+    <frame x="303" y="3" width="1613" height="1011" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32847682" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32847682" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3245033" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284091" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32386363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41986755" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3986755" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901368" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4181818" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38181818" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32847682" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23739688" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21571152" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967907" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24982001" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16623877" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33112583" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32847682" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893288" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291714" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1192,9 +1084,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="myTodoPanelSettings">
-      <TodoPanelSettings />
-    </option>
     <MESSAGE value="unfinished hw" />
     <MESSAGE value="finished tether hw" />
     <MESSAGE value="lesson with @Tests" />
@@ -1210,14 +1099,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/PageObjects/AngelPage.java</url>
-          <line>82</line>
-          <properties class="com.company.QAFactory.PageObjects.AngelPage" method="cyclicMatchWaiting" />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
@@ -1227,199 +1108,416 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Selenium/selenium-2.47.1/libs/testng-6.8.5.jar!/org/testng/Assert.class">
+    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG150/Firefox_WEBCOM_TitlesCapitalisation_Registration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2433" max-vertical-offset="9945">
-          <caret line="175" column="0" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="185" column="42" selection-start-line="185" selection-start-column="42" selection-end-line="185" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG150/Chrome_PCUP_TitlesCapitalisation_Profile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG150/Firefox_WGC_TitlesCapitalisation_Registration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG150/Firefox_WGC_TitlesCapitalisation_Registration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Selenium/selenium-2.47.1/libs/testng-6.8.5.jar!/org/testng/Assert.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2433" max-vertical-offset="9945">
+        <state vertical-scroll-proportion="0.0">
           <caret line="175" column="0" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Selenium/selenium-2.47.1/libs/testng-6.8.5.jar!/org/testng/Assert.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2433" max-vertical-offset="9945">
-          <caret line="175" column="0" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/PgatLeaderboard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="119" column="22" selection-start-line="119" selection-start-column="22" selection-end-line="120" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/PresidentsCup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/zipCodeForNonUS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1241">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Selenium/selenium-2.47.1/selenium-java-2.47.1.jar!/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27803737" vertical-offset="0" max-vertical-offset="428">
+        <state vertical-scroll-proportion="0.27803737">
           <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Selenium/selenium-2.47.1/selenium-java-2.47.1.jar!/org/openqa/selenium/WebElement.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25310174" vertical-offset="0" max-vertical-offset="731">
+        <state vertical-scroll-proportion="0.25310174">
           <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Page/PGATGigya.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
-          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG137/CHAMP_EmailValidation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="155" max-vertical-offset="884">
-          <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Selenium/selenium-2.47.1/libs/testng-6.8.5.jar!/org/testng/Assert.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.689826" vertical-offset="7278" max-vertical-offset="9945">
-          <caret line="175" column="0" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.11710677">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/WorldGolfChampionship.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/PresidentsCup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/zipCodeForNonUS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="63" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="57.05383">
+          <caret line="1621" column="21" selection-start-line="1621" selection-start-column="21" selection-end-line="1621" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/WhyStsticMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/Door.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Selenium/selenium-2.47.1/selenium-java-2.47.1.jar!/org/openqa/selenium/WebDriver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.123636365">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/DropdownTesting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Selenium/selenium-2.47.1/libs/junit-4.12.jar!/org/junit/Test.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2781186">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG150/Chrome_PCUP_TitlesCapitalisation_Registration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.87931037">
+          <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG150/Chrome_PGAT_TitlesCapitalisation_Profile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="13.793103">
+          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG150/Chrome_PGAT_TitlesCapitalisation_Registration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="17.896551">
+          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+          <folding>
+            <element signature="e#951#952#0" expanded="false" />
+            <element signature="e#1033#1034#0" expanded="false" />
+            <element signature="e#1417#1418#0" expanded="false" />
+            <element signature="e#1499#1500#0" expanded="false" />
+            <element signature="e#1883#1884#0" expanded="false" />
+            <element signature="e#1965#1966#0" expanded="false" />
+            <element signature="e#2024#2025#0" expanded="false" />
+            <element signature="e#2108#2109#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG150/Firefox_WEBCOM_TitlesCapitalisation_Profile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.2586207">
+          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG150/Firefox_WEBCOM_TitlesCapitalisation_Registration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG150/Firefox_WGC_TitlesCapitalisation_Profile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.5">
+          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG150/Firefox_WGC_TitlesCapitalisation_Registration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.862068">
+          <caret line="83" column="72" selection-start-line="83" selection-start-column="72" selection-end-line="83" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG150/IE_CHAMP_TitlesCapitalisation_Registration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="18.48276">
+          <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG150/IE_CHAMP_TitlesCapitalization_Profile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.2586207">
+          <caret line="65" column="53" selection-start-line="65" selection-start-column="53" selection-end-line="65" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#596#597#0" expanded="false" />
+            <element signature="e#629#630#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG137/WEBCOM_EmailValidation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.5689654">
+          <caret line="48" column="77" selection-start-line="48" selection-start-column="77" selection-end-line="48" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG137/WGC_EmailValidation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Page/PCUPGigya.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG150/Chrome_PCUP_TitlesCapitalisation_Profile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Page/PGATGigya.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG124/PGAT_FavoritePlayersAlphabetize_Profile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="58" column="5" selection-start-line="15" selection-start-column="4" selection-end-line="58" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG124/WEBCOM_FavoritePlayersAlphabetize_Profile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="50" column="48" selection-start-line="50" selection-start-column="48" selection-end-line="50" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG124/WEBCOM_FavoritePlayersAlphabetize_Registration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG124/WGC_FavoritePlayersAlphabetize_Profile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="50" column="46" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#696#697#0" expanded="false" />
+            <element signature="e#729#730#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG124/PCUP_FavoritePlayersAlphabetize_Registration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="50" column="46" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#421#422#0" expanded="false" />
+            <element signature="e#454#455#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG124/PCUP_FavoritePlayersAlphabetize_Profile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#698#699#0" expanded="true" />
+            <element signature="e#731#732#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG124/CHAMP_FavoritePlayersAlphabetize_Profile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#700#701#0" expanded="true" />
+            <element signature="e#733#734#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG124/CHAMP_FavoritePlayersAlphabetize_Registration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="50" column="49" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
+          <folding>
+            <element signature="e#422#423#0" expanded="false" />
+            <element signature="e#455#456#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG124/WGC_FavoritePlayersAlphabetize_Registration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG124/PGAT_FavoritePlayersAlphabetize_Registration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+          <folding>
+            <element signature="e#451#452#0" expanded="false" />
+            <element signature="e#484#485#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/BookingUzTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/PageObjects/UzPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="137" column="38" selection-start-line="137" selection-start-column="38" selection-end-line="137" selection-end-column="38" />
+          <folding>
+            <element signature="e#5931#5932#0" expanded="true" />
+            <element signature="e#6017#6018#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG137/PCUP_EmailValidation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG137/CHAMP_EmailValidation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Common/TestHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="204" column="31" selection-start-line="204" selection-start-column="31" selection-end-line="204" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG137/PGAT_EmailValidation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="969">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#554#555#0" expanded="false" />
-            <element signature="e#587#588#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/PageObjects/AnyWayAnyDay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="184" max-vertical-offset="663">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/WorldGolfChampionship.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="3485">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="37" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/DropdownTesting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="799">
-          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Tests/PTG124/CHAMP_FavoritePlayersAlphabetize_Profile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969">
-          <caret line="18" column="78" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="78" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Omnigon/Page/Gigya.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1510" max-vertical-offset="5559">
-          <caret line="109" column="5" selection-start-line="109" selection-start-column="5" selection-end-line="109" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/Common/TestHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1358" max-vertical-offset="3791">
-          <caret line="116" column="52" selection-start-line="110" selection-start-column="8" selection-end-line="116" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_71/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3325301" vertical-offset="1120" max-vertical-offset="51017">
-          <caret line="107" column="19" selection-start-line="107" selection-start-column="19" selection-end-line="107" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/PageObjects/AngelPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1132" max-vertical-offset="1547">
-          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="90" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/PageObjects/HWAngel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="4964">
-          <caret line="25" column="83" selection-start-line="25" selection-start-column="83" selection-end-line="25" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/BookingUzTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="337" max-vertical-offset="884">
-          <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.23449612">
+          <caret line="72" column="8" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#531#532#0" expanded="true" />
-            <element signature="e#564#565#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestProject1/src/com/company/QAFactory/PageObjects/UzPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50843376" vertical-offset="1353" max-vertical-offset="2261">
-          <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1069#1070#0" expanded="true" />
-            <element signature="e#1158#1159#0" expanded="true" />
-            <element signature="e#2800#2801#0" expanded="true" />
-            <element signature="e#2884#2885#0" expanded="true" />
-            <element signature="e#4533#4534#0" expanded="true" />
-            <element signature="e#4626#4627#0" expanded="true" />
-            <element signature="e#4799#4800#0" expanded="true" />
-            <element signature="e#4896#4897#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1464,7 +1562,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.7</last-edited>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

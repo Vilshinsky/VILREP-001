@@ -196,7 +196,7 @@ public class TestHelper {
         }
     }
 
-    public void takeScreenshot() {
+    public static void takeScreenshot() {
         try {
             File scrFile =
                     ((TakesScreenshot)TestHelper.driver).getScreenshotAs(OutputType.FILE);

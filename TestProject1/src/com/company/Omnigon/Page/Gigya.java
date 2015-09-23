@@ -20,7 +20,12 @@ public class Gigya {
     public static String newLogin = TestHelper.generateStringValue() + "@testmail.com";
 
     //NEW ACCOUNT
+    public static void generateNewLogin() {
+        TestHelper.generateStringValue();
+        newLogin = TestHelper.generateStringValue() + "@testmail.com";
+    }
     public static void newAccount() {
+        generateNewLogin();
         goToRegistrationStep3();
         TestHelper.waitSec(3);
         TestHelper.cyclicElementSearchByXpath("//*[@id='submitFavoritePlayer']").click();
