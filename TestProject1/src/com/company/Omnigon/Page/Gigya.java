@@ -18,6 +18,72 @@ public class Gigya {
     public static String pageWGCQA = "http://qa-wgc.pgatour.ctmsp.com/";
     public static String pagePCUPQA = "http://qa-pcup.pgatour.ctmsp.com/";
     public static String newLogin = TestHelper.generateStringValue() + "@testmail.com";
+    public static String pagePGATUAT = "http://uat-www.pgatour.ctmsp.com/";
+    public static String pageWEBCOMUAT = "http://uat-www.pgatour.ctmsp.com/webcom.html";
+    public static String pageCHAMPUAT = "http://uat-www.pgatour.ctmsp.com/champions.html";
+    public static String pageWGCUAT = "http://uat-wgc.pgatour.ctmsp.com/";
+    public static String pagePCUPUAT = "http://uat-pcup.pgatour.ctmsp.com/";
+
+    public static void setupChromeAndGoPGAT() {
+        TestHelper.setupChrome();
+        TestHelper.driver.get(pagePGATUAT);
+    }
+    public static void setupChromeAndGoWEBCOM() {
+        TestHelper.setupChrome();
+        TestHelper.driver.get(pageWEBCOMUAT);
+    }
+    public static void setupChromeAndGoCHAMP() {
+        TestHelper.setupChrome();
+        TestHelper.driver.get(pageCHAMPUAT);
+    }
+    public static void setupChromeAndGoWGC() {
+        TestHelper.setupChrome();
+        TestHelper.driver.get(pageWGCUAT);
+    }
+    public static void setupChromeAndGoPCUP() {
+        TestHelper.setupChrome();
+        TestHelper.driver.get(pagePCUPUAT);
+    }
+    public static void setupFirefoxAndGoPGAT() {
+        TestHelper.setupFirefox();
+        TestHelper.driver.get(pagePGATUAT);
+    }
+    public static void setupFirefoxAndGoWEBCOM() {
+        TestHelper.setupFirefox();
+        TestHelper.driver.get(pageWEBCOMUAT);
+    }
+    public static void setupFirefoxAndGoCHAMP() {
+        TestHelper.setupFirefox();
+        TestHelper.driver.get(pageCHAMPUAT);
+    }
+    public static void setupFirefoxAndGoWGC() {
+        TestHelper.setupFirefox();
+        TestHelper.driver.get(pageWGCUAT);
+    }
+    public static void setupFirefoxAndGoPCUP() {
+        TestHelper.setupFirefox();
+        TestHelper.driver.get(pagePCUPUAT);
+    }
+    public static void setupIEAndGoPGAT() {
+        TestHelper.setupIE();
+        TestHelper.driver.get(pagePGATUAT);
+    }
+    public static void setupIEAndGoWEBCOM() {
+        TestHelper.setupIE();
+        TestHelper.driver.get(pageWEBCOMUAT);
+    }
+    public static void setupIEAndGoCHAMP() {
+        TestHelper.setupIE();
+        TestHelper.driver.get(pageCHAMPUAT);
+    }
+    public static void setupIEAndGoWGC() {
+        TestHelper.setupIE();
+        TestHelper.driver.get(pageWGCUAT);
+    }
+    public static void setupIEAndGoPCUP() {
+        TestHelper.setupIE();
+        TestHelper.driver.get(pagePCUPUAT);
+    }
 
     //NEW ACCOUNT
     public static void generateNewLogin() {

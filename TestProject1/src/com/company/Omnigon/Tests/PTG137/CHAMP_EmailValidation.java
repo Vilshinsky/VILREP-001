@@ -11,7 +11,7 @@ import org.openqa.selenium.Dimension;
 public class CHAMP_EmailValidation {
     @BeforeClass
     public static void precondition() {
-        TestHelper.setupChromeAndGo(Gigya.pageCHAMPQA);
+        Gigya.setupChromeAndGoCHAMP();
         TestHelper.driver.manage().window().setSize(new Dimension(1212, 900));
         Gigya.newAccount();
         TestHelper.quit();
@@ -23,7 +23,7 @@ public class CHAMP_EmailValidation {
 
     @Test
     public void shouldDetectUsedEmailWithChrome() {
-        TestHelper.setupChromeAndGo(Gigya.pageCHAMPQA);
+        Gigya.setupChromeAndGoCHAMP();
         TestHelper.driver.manage().window().setSize(new Dimension(1212, 900));
         Gigya.tryUsedEmail();
         Assert.assertEquals("Email already exists", Gigya.checkEmailAlreadyUsedError());
@@ -32,7 +32,7 @@ public class CHAMP_EmailValidation {
     }
     @Test
     public void shouldDetectUsedEmailWithFirefox() {
-        TestHelper.setupFirefoxAndGo(Gigya.pageCHAMPQA);
+        Gigya.setupFirefoxAndGoCHAMP();
         TestHelper.driver.manage().window().setSize(new Dimension(1212, 900));
         Gigya.tryUsedEmail();
         Assert.assertEquals("Email already exists", Gigya.checkEmailAlreadyUsedError());
@@ -41,7 +41,7 @@ public class CHAMP_EmailValidation {
     }
     @Test
     public void shouldDetectUsedEmailWithIE() {
-        TestHelper.setupIEAndGo(Gigya.pageCHAMPQA);
+        Gigya.setupIEAndGoCHAMP();
         TestHelper.driver.manage().window().setSize(new Dimension(1212, 900));
         Gigya.tryUsedEmail();
         Assert.assertEquals("Email already exists", Gigya.checkEmailAlreadyUsedError());

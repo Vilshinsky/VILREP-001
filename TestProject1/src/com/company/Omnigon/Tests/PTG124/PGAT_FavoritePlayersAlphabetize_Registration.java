@@ -19,7 +19,7 @@ public class PGAT_FavoritePlayersAlphabetize_Registration {
     }
     @Test
     public void alphabetizeThroughRegistrationChrome() {
-        TestHelper.setupChromeAndGo(Gigya.pagePGATQA);
+        Gigya.setupChromeAndGoPGAT();
         TestHelper.driver.manage().window().setSize(new Dimension(1212, 900));
         Gigya.goToRegistrationStep3();
         Gigya.addThreePlayers();
@@ -40,7 +40,7 @@ public class PGAT_FavoritePlayersAlphabetize_Registration {
     }
     @Test
     public void alphabetizeThroughRegistrationFirefox() {
-        TestHelper.setupFirefoxAndGo(Gigya.pagePGATQA);
+        Gigya.setupFirefoxAndGoPGAT();
         TestHelper.driver.manage().window().setSize(new Dimension(1212, 900));
         Gigya.goToRegistrationStep3();
         Gigya.addThreePlayers();
@@ -61,7 +61,7 @@ public class PGAT_FavoritePlayersAlphabetize_Registration {
     }
     @Test
     public void alphabetizeThroughRegistrationIE() {
-        TestHelper.setupIEAndGo(Gigya.pagePGATQA);
+        Gigya.setupIEAndGoPGAT();
         TestHelper.driver.manage().window().setSize(new Dimension(1212, 900));
         Gigya.goToRegistrationStep3();
         Gigya.addThreePlayers();

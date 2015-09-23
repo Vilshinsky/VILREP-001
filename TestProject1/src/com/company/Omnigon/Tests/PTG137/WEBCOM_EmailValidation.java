@@ -11,7 +11,7 @@ import org.openqa.selenium.Dimension;
 public class WEBCOM_EmailValidation {
     @BeforeClass
     public static void precondition() {
-        TestHelper.setupChromeAndGo(Gigya.pageWEBCOMQA);
+        Gigya.setupChromeAndGoWEBCOM();
         TestHelper.driver.manage().window().setSize(new Dimension(1212, 900));
         Gigya.newAccount();
         TestHelper.quit();
@@ -23,7 +23,7 @@ public class WEBCOM_EmailValidation {
 
     @Test
     public void shouldDetectUsedEmailWithChrome() {
-        TestHelper.setupChromeAndGo(Gigya.pageWEBCOMQA);
+        Gigya.setupChromeAndGoWEBCOM();
         TestHelper.driver.manage().window().setSize(new Dimension(1212, 900));
         Gigya.tryUsedEmail();
         Assert.assertEquals("Email already exists", Gigya.checkEmailAlreadyUsedError());
@@ -32,7 +32,7 @@ public class WEBCOM_EmailValidation {
     }
     @Test
     public void shouldDetectUsedEmailWithFirefox() {
-        TestHelper.setupFirefoxAndGo(Gigya.pageWEBCOMQA);
+        Gigya.setupFirefoxAndGoWEBCOM();
         TestHelper.driver.manage().window().setSize(new Dimension(1212, 900));
         Gigya.tryUsedEmail();
         Assert.assertEquals("Email already exists", Gigya.checkEmailAlreadyUsedError());
@@ -41,7 +41,7 @@ public class WEBCOM_EmailValidation {
     }
     @Test
     public void shouldDetectUsedEmailWithIE() {
-        TestHelper.setupIEAndGo(Gigya.pageWEBCOMQA);
+        Gigya.setupIEAndGoWEBCOM();
         TestHelper.driver.manage().window().setSize(new Dimension(1212, 900));
         Gigya.tryUsedEmail();
         Assert.assertEquals("Email already exists", Gigya.checkEmailAlreadyUsedError());

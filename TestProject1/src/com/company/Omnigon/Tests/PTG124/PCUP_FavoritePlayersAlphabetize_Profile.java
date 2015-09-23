@@ -15,7 +15,7 @@ import org.openqa.selenium.Dimension;
 public class PCUP_FavoritePlayersAlphabetize_Profile {
     @BeforeClass
     public static void precondition() {
-        TestHelper.setupChromeAndGo(Gigya.pagePCUPQA);
+        Gigya.setupChromeAndGoPCUP();
         TestHelper.driver.manage().window().setSize(new Dimension(1212, 900));
         Gigya.newAccount();
         TestHelper.quit();
@@ -26,35 +26,35 @@ public class PCUP_FavoritePlayersAlphabetize_Profile {
     }
     @Test
     public void alphabetizeThroughManageProfileChrome() {
-        TestHelper.setupChromeAndGo(Gigya.pagePCUPQA);
+        Gigya.setupChromeAndGoPCUP();
         TestHelper.driver.manage().window().setSize(new Dimension(1212, 900));
         Gigya.passAuthorization();
         PGATGigya.goToFavorites();
         Gigya.addThreePlayers();
-        Assert.assertEquals("Stuart Appleby", Gigya.checkFirstInList());
-        Assert.assertEquals("Dave Barr", Gigya.checkSecondInList());
-        Assert.assertEquals("Tim Norris", Gigya.checkThirdInList());
+        Assert.assertEquals("Stuart Appleby\n" + "×", Gigya.checkFirstInList());
+        Assert.assertEquals("Dave Barr\n" + "×", Gigya.checkSecondInList());
+        Assert.assertEquals("Tim Norris\n" + "×", Gigya.checkThirdInList());
     }
     @Test
     public void alphabetizeThroughRegistrationFirefox() {
-        TestHelper.setupFirefoxAndGo(Gigya.pagePCUPQA);
+        Gigya.setupFirefoxAndGoPCUP();
         TestHelper.driver.manage().window().setSize(new Dimension(1212, 900));
         Gigya.passAuthorization();
         PGATGigya.goToFavorites();
         Gigya.addThreePlayers();
-        Assert.assertEquals("Stuart Appleby", Gigya.checkFirstInList());
-        Assert.assertEquals("Dave Barr", Gigya.checkSecondInList());
-        Assert.assertEquals("Tim Norris", Gigya.checkThirdInList());
+        Assert.assertEquals("Stuart Appleby\n" + "×", Gigya.checkFirstInList());
+        Assert.assertEquals("Dave Barr\n" + "×", Gigya.checkSecondInList());
+        Assert.assertEquals("Tim Norris\n" + "×", Gigya.checkThirdInList());
     }
     @Test
     public void alphabetizeThroughRegistrationIE() {
-        TestHelper.setupIEAndGo(Gigya.pagePCUPQA);
+        Gigya.setupIEAndGoPCUP();
         TestHelper.driver.manage().window().setSize(new Dimension(1212, 900));
         Gigya.passAuthorization();
         PGATGigya.goToFavorites();
         Gigya.addThreePlayers();
-        Assert.assertEquals("Stuart Appleby", Gigya.checkFirstInList());
-        Assert.assertEquals("Dave Barr", Gigya.checkSecondInList());
-        Assert.assertEquals("Tim Norris", Gigya.checkThirdInList());
+        Assert.assertEquals("Stuart Appleby\n" + "×", Gigya.checkFirstInList());
+        Assert.assertEquals("Dave Barr\n" + "×", Gigya.checkSecondInList());
+        Assert.assertEquals("Tim Norris\n" + "×", Gigya.checkThirdInList());
     }
 }
