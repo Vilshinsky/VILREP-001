@@ -34,12 +34,12 @@ public class BookingUzTests {
         Assert.assertTrue(UzPage.checkThatTrainRoutePopupExist());
         UzPage.closeTrainRoutePopup();
         UzPage.moveToFooter();
-        UzPage.chooseCoupe();
+        UzPage.isChooseButtonActive();
         UzPage.checkThatFifthCoachDefault();
         Assert.assertEquals("active", UzPage.checkThatFifthCoachDefault());
         Assert.assertEquals("lower free", UzPage.checkThatPlaceFree());
         UzPage.goToMyFreePlace();
-        Assert.assertEquals(true, UzPage.cyclicMatchWaiting("179.07*"));
+        Assert.assertEquals(true, UzPage.cyclicTicketPriceMatchWaiting("179.07*"));
         UzPage.fillLastName();
         UzPage.fillName();
     }
