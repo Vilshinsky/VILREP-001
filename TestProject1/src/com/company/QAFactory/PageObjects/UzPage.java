@@ -39,6 +39,7 @@ public class UzPage {
     public static String loadingWheel = "//*[@id='loading_img']";
 
     public static String firstActiveCoach = "//*[@class='coaches']/a[1]";
+    public static String sit31 = "//span[text()='31']/..";
     public static String sit41 = "//span[text()='41']/..";
     public static String sit42 = "//span[text()='42']/..";
     public static String ticketPrice = "//*[@class='price']";
@@ -181,6 +182,9 @@ public class UzPage {
     }
     public static String getSummaryPrice() {
     return TestHelper.cyclicElementSearchByXpath(summaryPriceButton).getText();
+    }
+    public static String getActivityValue(String activityValue) {
+        return TestHelper.cyclicElementSearchByXpath(activityValue).getAttribute("class");
     }
     public static void isChooseButtonActive(String choose) {
         for(int i = 0; i < 250; i++) {

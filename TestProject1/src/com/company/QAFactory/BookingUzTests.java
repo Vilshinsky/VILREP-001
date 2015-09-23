@@ -2,22 +2,19 @@ package com.company.QAFactory;
 
 import com.company.Common.TestHelper;
 import com.company.QAFactory.PageObjects.UzPage;
-import org.junit.AfterClass;
-import org.junit.Assert;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.*;
 
 /**
  * Created by Admin on 22.09.15.
  */
 public class BookingUzTests {
-    @BeforeClass
-    public static void precondition() {
+    @Before
+    public void precondition() {
         TestHelper.setupChromeAndGo(UzPage.pageBookingUz);
         TestHelper.driver.manage().window().maximize();
     }
-    @AfterClass
-    public static void postcondition() {
+    @After
+    public void postcondition() {
         TestHelper.quit();
     }
     @Test
@@ -37,8 +34,9 @@ public class BookingUzTests {
         UzPage.isChooseButtonActive(UzPage.selectCoupe2ndCoachButton);
         UzPage.checkThatFifthCoachDefault();
         Assert.assertEquals("active", UzPage.checkThatFifthCoachDefault());
-        Assert.assertEquals("lower free", UzPage.checkThatPlaceFree(UzPage.sit41));
-        UzPage.goToMyFreePlace(UzPage.sit41);
+        Assert.assertEquals(true, UzPage.cyclicValuesMatchWaitingBeforeAssert("lower free", UzPage.getActivityValue
+                (UzPage.sit31)));
+        UzPage.goToMyFreePlace(UzPage.sit31);
         Assert.assertEquals(true, UzPage.cyclicValuesMatchWaitingBeforeAssert("179.07", UzPage.getSummaryPrice()));
         UzPage.fillLastName();
         UzPage.fillName();
@@ -54,8 +52,10 @@ public class BookingUzTests {
         Assert.assertEquals("601 Л", UzPage.checkNumberOfTrain(UzPage.trainSixZeroOne));
         UzPage.moveToFooter();
         UzPage.isChooseButtonActive(UzPage.chooseButton601);
-        Assert.assertEquals(true, UzPage.cyclicValuesMatchWaitingBeforeAssert("lower free", UzPage.sit41));
-        Assert.assertEquals(true, UzPage.cyclicValuesMatchWaitingBeforeAssert("upper free", UzPage.sit42));
+        Assert.assertEquals(true, UzPage.cyclicValuesMatchWaitingBeforeAssert("lower free", UzPage.getActivityValue
+                (UzPage.sit41)));
+        Assert.assertEquals(true, UzPage.cyclicValuesMatchWaitingBeforeAssert("upper free", UzPage.getActivityValue
+                (UzPage.sit42)));
         UzPage.goToMyFreePlace(UzPage.sit41);
         UzPage.goToMyFreePlace(UzPage.sit42);
         Assert.assertEquals(true, UzPage.cyclicValuesMatchWaitingBeforeAssert("163.76", UzPage.getSummaryPrice()));
