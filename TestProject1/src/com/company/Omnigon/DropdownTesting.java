@@ -30,7 +30,7 @@ public class DropdownTesting {
 //        WebDriver driver = new FirefoxDriver();
 //        driver.get("http://qa-www.pgatour.ctmsp.com/");
 //        driver.findElement(By.cssSelector(".header-btn")).click();
-//        cyclicElementSearchByCss("//*[@class='drillDownMenu l-drillDown']//a[@class='login-button']", driver);
+//        waitElementByCss("//*[@class='drillDownMenu l-drillDown']//a[@class='login-button']", driver);
 //        driver.findElement(By.xpath("//ul[@class='nav nav-tabs hidden-small']//a[contains(text(),'CHAMPIONS TOUR')]")).click();
 //    }
     @Test

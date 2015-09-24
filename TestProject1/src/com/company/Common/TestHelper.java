@@ -2,6 +2,7 @@ package com.company.Common;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -60,7 +61,7 @@ public class TestHelper {
         setupOpera();
         driver.get(link);
     }
-                                                                                                                        //BASIC COMMANDS
+                                                                                                                        //PRECONDITIONS & POSTCONDITIONS
     public static void get(String url) {
         driver.get(url);
     }
@@ -68,7 +69,7 @@ public class TestHelper {
         driver.quit();
     }
     public static void setResolution(int width, int height) {
-        driver.manage().window().setSize(new org.openqa.selenium.Dimension(width, height));
+        driver.manage().window().setSize(new Dimension(width, height));
     }
     public static void setFullscreen() {
         driver.manage().window().maximize();
@@ -88,8 +89,8 @@ public class TestHelper {
             e.printStackTrace();
         }
     }
-
-    public static WebElement cyclicElementSearchById(String target) {
+                                                                                                                        //Searching and waiting for element in DOM
+    public static WebElement waitElementById(String target) {
         for (int i = 0; i < 250; i++)    {
             if (driver.findElements(By.id(target)).size() > 0) {
                 break;
@@ -98,7 +99,7 @@ public class TestHelper {
         }
         return driver.findElement(By.id(target));
     }
-    public static WebElement cyclicElementSearchByCss(String target) {
+    public static WebElement waitElementByCss(String target) {
         for (int i = 0; i < 250; i++)    {
             if (driver.findElements(By.cssSelector(target)).size() > 0) {
                 break;
@@ -107,7 +108,7 @@ public class TestHelper {
         }
         return driver.findElement(By.cssSelector(target));
     }
-    public static WebElement cyclicElementSearchByXpath(String target) {
+    public static WebElement waitElementByXpath(String target) {
         for (int i = 0; i < 250; i++)    {
             if (driver.findElements(By.xpath(target)).size() > 0) {
                 break;
@@ -116,7 +117,26 @@ public class TestHelper {
         }
         return driver.findElement(By.xpath(target));
     }
-    public static WebElement cyclicIsElementExistByXpath(String target) {
+                                                                                                                        //Waiting for moment when element doesn't exist in DOM
+    public static WebElement waitElementNotExistById(String target) {
+        for (int i = 0; i < 250; i++) {
+            if (driver.findElements(By.id(target)).size() == 0) {
+                break;
+            }
+            waitMsec(1);
+        }
+        return null;
+    }
+    public static WebElement waitElementNotExistByCss(String target) {
+        for (int i = 0; i < 250; i++)    {
+            if (driver.findElements(By.cssSelector(target)).size() == 0) {
+                break;
+            }
+            waitMsec(1);
+        }
+        return null;
+    }
+    public static WebElement waitElementNotExistByXpath(String target) {
         for (int i = 0; i < 250; i++)    {
             if (driver.findElements(By.xpath(target)).size() == 0) {
                 break;
@@ -128,30 +148,30 @@ public class TestHelper {
 
     public static WebElement cyclicElementIsDisplayedId(String target) {
         for (int i = 0; i < 250; i++)    {
-            if (TestHelper.cyclicElementSearchById(target).isDisplayed()) {
+            if (TestHelper.waitElementById(target).isDisplayed()) {
                 break;
             }
             waitMsec(1);
         }
-        return TestHelper.cyclicElementSearchById(target);
+        return TestHelper.waitElementById(target);
     }
     public static WebElement cyclicElementIsDisplayedCss(String target) {
         for (int i = 0; i < 250; i++)    {
-            if (TestHelper.cyclicElementSearchByCss(target).isDisplayed()) {
+            if (TestHelper.waitElementByCss(target).isDisplayed()) {
                 break;
             }
             waitMsec(1);
         }
-        return TestHelper.cyclicElementSearchByCss(target);
+        return TestHelper.waitElementByCss(target);
     }
     public static WebElement cyclicElementIsDisplayedXpath(String target) {
         for (int i = 0; i < 250; i++)    {
-            if (TestHelper.cyclicElementSearchByXpath(target).isDisplayed()) {
+            if (TestHelper.waitElementByXpath(target).isDisplayed()) {
                 break;
             }
             waitMsec(1);
         }
-        return TestHelper.cyclicElementSearchByXpath(target);
+        return TestHelper.waitElementByXpath(target);
     }
                                                                                                                         //EQUALITY TEST FUNCTIONS
     public static boolean checkIsValuesEqual(String expected, String actual) {

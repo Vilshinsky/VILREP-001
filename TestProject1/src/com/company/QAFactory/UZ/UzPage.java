@@ -54,20 +54,20 @@ public class UzPage {
     public static String lowerFirstNameInput = "//tbody/tr[2]//*[@class='firstname']";
 
     public static boolean checkMainStartElementsExist() {
-        if(TestHelper.cyclicElementSearchByXpath(stationFromInput).isDisplayed() &&
-                TestHelper.cyclicElementSearchByXpath(stationTillInput).isDisplayed() &&
-                TestHelper.cyclicElementSearchByXpath(goToDepartureDateSetting).isDisplayed() &&
-                TestHelper.cyclicElementSearchByXpath(searchButton).isDisplayed()) {
+        if(TestHelper.waitElementByXpath(stationFromInput).isDisplayed() &&
+                TestHelper.waitElementByXpath(stationTillInput).isDisplayed() &&
+                TestHelper.waitElementByXpath(goToDepartureDateSetting).isDisplayed() &&
+                TestHelper.waitElementByXpath(searchButton).isDisplayed()) {
             return true;
         }
         return false;
     }
     public static String autocompeteValue(String xpath) {
-        return TestHelper.cyclicElementSearchByXpath(xpath).getAttribute("title");
+        return TestHelper.waitElementByXpath(xpath).getAttribute("title");
     }
     public static boolean checkAutocompleteValuesFrom(String value, String[] expected) {
-        TestHelper.cyclicElementSearchByXpath(stationFromInput).sendKeys(value);
-        isChosenElementAppeared("//*[@id='stations_from']/div[1]");
+        TestHelper.waitElementByXpath(stationFromInput).sendKeys(value);
+        isChosenElementAppeared("//*[@id='stations_from']/div");
         List<WebElement> divs = TestHelper.driver.findElements(By.xpath("//*[@id='stations_from']/div"));
         for(int i=0; i <= 9; i++) {
             if(expected[i].equals(divs.get(i).getAttribute("title"))) {
@@ -77,79 +77,74 @@ public class UzPage {
         }
         return true;
     }
-
-    public static boolean checkAutocompleteValuesTo(String value) {
-        TestHelper.cyclicElementSearchByXpath(stationTillInput).sendKeys(value);
-        isChosenElementAppeared("//*[@id='stations_till']/div[1]");
-        if(autocompeteValue("//*[@id='stations_till']/div[1]").equals("Ivano-Frankivsk") &&
-                autocompeteValue("//*[@id='stations_till']/div[2]").equals("Ivano-Kopyne") &&
-                autocompeteValue("//*[@id='stations_till']/div[3]").equals("Ivanovka") &&
-                autocompeteValue("//*[@id='stations_till']/div[4]").equals("Ivanovka") &&
-                autocompeteValue("//*[@id='stations_till']/div[5]").equals("Ivanovka") &&
-                autocompeteValue("//*[@id='stations_till']/div[6]").equals("Ivanovo") &&
-                autocompeteValue("//*[@id='stations_till']/div[7]").equals("Ivanovo S") &&
-                autocompeteValue("//*[@id='stations_till']/div[8]").equals("Ivanovskaia") &&
-                autocompeteValue("//*[@id='stations_till']/div[9]").equals("Ivanovskii")) {
-            return true;
+    public static boolean checkAutocompleteValuesTo(String value, String[] expected) {
+        TestHelper.waitElementByXpath(stationTillInput).sendKeys(value);
+        isChosenElementAppeared("//*[@id='stations_till']/div");
+        List<WebElement> divs = TestHelper.driver.findElements(By.xpath("//*[@id='stations_till']/div"));
+        for(int i = 0; i <= 8; i++) {
+            if(expected[i].equals(divs.get(i).getAttribute("title"))) {
+            } else {
+                return false;
+            }
         }
-        return false;
+        return true;
     }
     public static boolean isCurrentDate() {
-        if(TestHelper.cyclicElementSearchByXpath("//*[@id='date_dep']").getAttribute("value")
+        if(TestHelper.waitElementByXpath("//*[@id='date_dep']").getAttribute("value")
                 .equals(TestHelper.generateActualDateDots())) {
             return true;
         }
         return false;
     }
     public static void incorrectFillStationFromInput(String frominput) {
-        TestHelper.cyclicElementSearchByXpath(stationFromInput).clear();
-        TestHelper.cyclicElementSearchByXpath(stationFromInput).sendKeys(frominput);
+        TestHelper.waitElementByXpath(stationFromInput).clear();
+        TestHelper.waitElementByXpath(stationFromInput).sendKeys(frominput);
     }
     public static void fillStationFromInput(String frominput) {
-        TestHelper.cyclicElementSearchByXpath(stationFromInput).clear();
-        TestHelper.cyclicElementSearchByXpath(stationFromInput).sendKeys(frominput);
+        TestHelper.waitElementByXpath(stationFromInput).clear();
+        TestHelper.waitElementByXpath(stationFromInput).sendKeys(frominput);
         TestHelper.cyclicElementIsDisplayedXpath(stationFromFirstDrop).click();
     }
     public static void incorrectFillStationTillInput(String tillinput) {
-        TestHelper.cyclicElementSearchByXpath(stationTillInput).clear();
-        TestHelper.cyclicElementSearchByXpath(stationTillInput).sendKeys(tillinput);
+        TestHelper.waitElementByXpath(stationTillInput).clear();
+        TestHelper.waitElementByXpath(stationTillInput).sendKeys(tillinput);
     }
     public static void fillStationTillInput(String tillinput) {
-        TestHelper.cyclicElementSearchByXpath(stationTillInput).clear();
-        TestHelper.cyclicElementSearchByXpath(stationTillInput).sendKeys(tillinput);
+        TestHelper.waitElementByXpath(stationTillInput).clear();
+        TestHelper.waitElementByXpath(stationTillInput).sendKeys(tillinput);
         TestHelper.cyclicElementIsDisplayedXpath(stationTillFirstDrop).click();
     }
     public static void setDate(String month, String date) {
-        TestHelper.cyclicElementSearchByXpath(goToDepartureDateSetting).click();
+        TestHelper.waitElementByXpath(goToDepartureDateSetting).click();
         TestHelper.cyclicElementIsDisplayedXpath("//*[text()='" + month + "']/..//td[text()='" + date + "']")
                 .click();
     }
     public static void pushSearch() {
         isChosenElementAppeared(searchButton);
-        TestHelper.cyclicElementSearchByXpath(searchButton).click();
+        TestHelper.waitElementByXpath(searchButton).click();
     }
     public static String checkDateOnSearchButton() {
-        return TestHelper.cyclicElementSearchByXpath(searchButtonsValue).getText();
+        return TestHelper.waitElementByXpath(searchButtonsValue).getText();
     }
     public static WebElement isChosenElementAppeared(String choose) {
         for(int i = 0; i < 250; i++) {
-            if(TestHelper.cyclicElementSearchByXpath(choose).isEnabled() &&
-                    TestHelper.cyclicElementSearchByXpath(choose).isDisplayed()) {
+            if(TestHelper.waitElementByXpath(choose).isEnabled() &&
+                    TestHelper.waitElementByXpath(choose).isDisplayed()) {
                 break;
             }
             TestHelper.waitMsec(1);
         }
-        return TestHelper.cyclicElementSearchByXpath(choose);
+        return TestHelper.waitElementByXpath(choose);
     }
     public static WebElement isChosenElementDisappeared(String choose) {
         for(int i = 0; i < 250; i++) {
-            if(TestHelper.cyclicElementSearchByXpath(choose).isEnabled() &&
-                    TestHelper.cyclicElementSearchByXpath(choose).isDisplayed()) {
+            if(TestHelper.waitElementByXpath(choose).isEnabled() &&
+                    TestHelper.waitElementByXpath(choose).isDisplayed()) {
                 TestHelper.waitMsec(1);
             }
             break;
         }
-        return TestHelper.cyclicElementSearchByXpath(choose);
+        return TestHelper.waitElementByXpath(choose);
     }
     public static boolean noTrains() {
         if(isChosenElementAppeared("//*[@id='ts_res_not_found']").getText()
@@ -159,8 +154,8 @@ public class UzPage {
         return false;
     }
     public static void moveToFooter() {
-        TestHelper.cyclicElementSearchByXpath(footer);
-        WebElement footerBlock = TestHelper.cyclicElementSearchByXpath
+        TestHelper.waitElementByXpath(footer);
+        WebElement footerBlock = TestHelper.waitElementByXpath
                 (footer);
         Actions nextactions = new Actions(TestHelper.driver);
         nextactions.moveToElement(footerBlock);
@@ -168,8 +163,8 @@ public class UzPage {
     }
     public static boolean isErrorMessageExist() {
         for(int i = 0; i < 250; i++) {
-            if(TestHelper.cyclicElementSearchByXpath("//*[@class='vToolsPopupHeader']//span").isEnabled() &&
-                    TestHelper.cyclicElementSearchByXpath("//*[@class='vToolsPopupHeader']//span").isDisplayed()) {
+            if(TestHelper.waitElementByXpath("//*[@class='vToolsPopupHeader']//span").isEnabled() &&
+                    TestHelper.waitElementByXpath("//*[@class='vToolsPopupHeader']//span").isDisplayed()) {
                 break;
             }
             TestHelper.waitMsec(1);
@@ -178,11 +173,11 @@ public class UzPage {
     }
     public static boolean isErrorMessageCorrect() {
         if(isErrorMessageExist()) {
-            if(TestHelper.cyclicElementSearchByXpath("//*[@class='vToolsPopupHeader']//span").getText()
+            if(TestHelper.waitElementByXpath("//*[@class='vToolsPopupHeader']//span").getText()
                     .equals("Error filling in the form") &&
-            TestHelper.cyclicElementSearchByXpath("//*[@class='vToolsPopupContent']//p[1]").getText()
+            TestHelper.waitElementByXpath("//*[@class='vToolsPopupContent']//p[1]").getText()
                     .equals("Select a departure point from the drop down list") &&
-                    TestHelper.cyclicElementSearchByXpath("//*[@class='vToolsPopupContent']//p[2]").getText()
+                    TestHelper.waitElementByXpath("//*[@class='vToolsPopupContent']//p[2]").getText()
                             .equals("Select your destination from the drop down list")) {
                 return true;
             }
@@ -190,37 +185,37 @@ public class UzPage {
         return false;
     }
     public static void closeErrorMessage() {
-        TestHelper.cyclicElementSearchByXpath("//*[@class='vToolsPopupToolbar']/button").click();
-        TestHelper.cyclicIsElementExistByXpath("//*[@class='vToolsPopupToolbar']/button");
+        TestHelper.waitElementByXpath("//*[@class='vToolsPopupToolbar']/button").click();
+        TestHelper.waitElementNotExistByXpath("//*[@class='vToolsPopupToolbar']/button");
     }
     public static String checkNumberOfTrain(String number) {
-        return TestHelper.cyclicElementSearchByXpath(number).getText();
+        return TestHelper.waitElementByXpath(number).getText();
     }
     public static String checkNumberOfFirstTrain() {
-        return TestHelper.cyclicElementSearchByXpath(trainFirst).getText();
+        return TestHelper.waitElementByXpath(trainFirst).getText();
     }
     public static String checkNumberOfSecondTrain() {
-        return TestHelper.cyclicElementSearchByXpath(trainSecond).getText();
+        return TestHelper.waitElementByXpath(trainSecond).getText();
     }
     public static String checkNumberOfThirdTrain() {
-        return TestHelper.cyclicElementSearchByXpath(trainThird).getText();
+        return TestHelper.waitElementByXpath(trainThird).getText();
     }
     public static void goToSecondTrain() {
-        TestHelper.cyclicElementSearchByXpath(trainSecond).click();
+        TestHelper.waitElementByXpath(trainSecond).click();
     }
     public static boolean checkThatTrainRoutePopupExist() {
-        if(TestHelper.cyclicElementSearchByXpath(trainRoutePopup).isDisplayed()) {
+        if(TestHelper.waitElementByXpath(trainRoutePopup).isDisplayed()) {
             return true;
         } else {
             return false;
         }
     }
     public static void closeTrainRoutePopup() {
-        TestHelper.cyclicElementSearchByXpath(trainRoutePopupCloseButton).click();
+        TestHelper.waitElementByXpath(trainRoutePopupCloseButton).click();
     }
     public static boolean checkThatFifthCoachClassIsActive() {
         for (int i = 0; i < 250; i++)    {
-            if (TestHelper.cyclicElementSearchByXpath(firstActiveCoach)
+            if (TestHelper.waitElementByXpath(firstActiveCoach)
                     .getAttribute("class").equals("active")) {
                 break;
             }
@@ -235,11 +230,11 @@ public class UzPage {
             }
             TestHelper.waitMsec(1);
         }
-        return TestHelper.cyclicElementSearchByXpath(firstActiveCoach)
+        return TestHelper.waitElementByXpath(firstActiveCoach)
                 .getAttribute("class");
     }
     public static boolean checkThatCoachesAppear() {
-        if(TestHelper.cyclicElementSearchByXpath(firstActiveCoach).isDisplayed() && !TestHelper.cyclicElementSearchByXpath(loadingWheel).isDisplayed()) {
+        if(TestHelper.waitElementByXpath(firstActiveCoach).isDisplayed() && !TestHelper.waitElementByXpath(loadingWheel).isDisplayed()) {
             return true;
         } else {
             return false;
@@ -255,37 +250,37 @@ public class UzPage {
         return true;
     }
     public static void goToMyFreePlace(String freeplace) {
-        TestHelper.cyclicElementSearchByXpath(freeplace).click();
+        TestHelper.waitElementByXpath(freeplace).click();
     }
     public static void fillLastName() {
-        TestHelper.cyclicElementSearchByXpath(lastNameInput).sendKeys("Smith");
+        TestHelper.waitElementByXpath(lastNameInput).sendKeys("Smith");
     }
     public static void fillName() {
-        TestHelper.cyclicElementSearchByXpath(firstNameInput).sendKeys("John");
+        TestHelper.waitElementByXpath(firstNameInput).sendKeys("John");
     }
     public static void fillHigherNameInputs() {
-        TestHelper.cyclicElementSearchByXpath(higherLastNameInput).sendKeys("Smith");
-        TestHelper.cyclicElementSearchByXpath(higherFirstNameInput).sendKeys("John");
+        TestHelper.waitElementByXpath(higherLastNameInput).sendKeys("Smith");
+        TestHelper.waitElementByXpath(higherFirstNameInput).sendKeys("John");
     }
     public static void fillLowerNameInputs() {
-        TestHelper.cyclicElementSearchByXpath(lowerLastNameInput).sendKeys("Smith");
-        TestHelper.cyclicElementSearchByXpath(lowerFirstNameInput).sendKeys("Jane");
+        TestHelper.waitElementByXpath(lowerLastNameInput).sendKeys("Smith");
+        TestHelper.waitElementByXpath(lowerFirstNameInput).sendKeys("Jane");
     }
     public static String getSummaryPrice() {
-    return TestHelper.cyclicElementSearchByXpath(summaryPriceButton).getText();
+    return TestHelper.waitElementByXpath(summaryPriceButton).getText();
     }
     public static String getActivityValue(String activityValue) {
-        return TestHelper.cyclicElementSearchByXpath(activityValue).getAttribute("class");
+        return TestHelper.waitElementByXpath(activityValue).getAttribute("class");
     }
     public static void isChosenButtonActive(String choose) {
         isChosenElementDisappeared("//*[@id='loading_img']");
         for(int i = 0; i < 250; i++) {
-            if(TestHelper.cyclicElementSearchByXpath(choose).isEnabled()) {
+            if(TestHelper.waitElementByXpath(choose).isEnabled()) {
                 break;
             }
             TestHelper.waitMsec(1);
         }
-        TestHelper.cyclicElementSearchByXpath(choose).click();
+        TestHelper.waitElementByXpath(choose).click();
     }
     public static List<String> getFromDropdown() {
         List<WebElement> divs = TestHelper.driver.findElements(By.xpath("//*[@id='stations_from']/div"));

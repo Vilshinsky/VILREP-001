@@ -9,18 +9,18 @@ public class PGATGigya {
         cursorOverAvatar();
         cyclicWaitingDropdownOpens();
         TestHelper.waitMsec(5);
-        TestHelper.cyclicElementSearchByXpath("//a[text()='Manage profile']").click();
-        TestHelper.cyclicElementSearchByXpath("//*[@id='gigya-profile-form']/div[1]/a[3]").click();
+        TestHelper.waitElementByXpath("//a[text()='Manage profile']").click();
+        TestHelper.waitElementByXpath("//*[@id='gigya-profile-form']/div[1]/a[3]").click();
     }
     public static void cursorOverAvatar() {
         TestHelper.waitSec(2);
         Actions actions = new Actions(TestHelper.driver);
-        actions.moveToElement(TestHelper.cyclicElementSearchByXpath("//div[contains(@class,'user-menu')]"))
+        actions.moveToElement(TestHelper.waitElementByXpath("//div[contains(@class,'user-menu')]"))
                 .build().perform();
     }
     public static boolean cyclicWaitingDropdownOpens() {
         for (int i = 0; i < 250; i++)    {
-            if (TestHelper.cyclicElementSearchByXpath("//a[text()='Manage profile']").isDisplayed()) {
+            if (TestHelper.waitElementByXpath("//a[text()='Manage profile']").isDisplayed()) {
                 break;
             }
             TestHelper.waitMsec(1);

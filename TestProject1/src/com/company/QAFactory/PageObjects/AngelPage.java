@@ -38,7 +38,7 @@ public class AngelPage {
     }
 
     public static void generate() {
-        TestHelper.cyclicElementSearchByCss(generateSel).click();
+        TestHelper.waitElementByCss(generateSel).click();
     }
 
     public static String getValue() {

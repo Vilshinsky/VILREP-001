@@ -75,8 +75,11 @@ public class BookingUzTests {
     public void testBlock4() {
         Assert.assertTrue(UzPage.checkMainStartElementsExist());
         Assert.assertTrue(UzPage.checkAutocompleteValuesFrom("Ky", new String[] {"Kyaniv Pereval",
-                "Kyanivka","Kybyntsi","Kychyranky","Kyiv","Kyivska Rusanivka","Kyj","Kykshor","Kyn","Kynnu"}));
-        Assert.assertTrue(UzPage.checkAutocompleteValuesTo("Ivano"));
+                "Kyanivka","Kybyntsi","Kychyranky","Kyiv","Kyivska Rusanivka",
+                "Kyj","Kykshor","Kyn","Kynnu"}));
+        Assert.assertTrue(UzPage.checkAutocompleteValuesTo("Ivano", new String[] {"Ivano-Frankivsk",
+                "Ivano-Kopyne","Ivanovka","Ivanovka","Ivanovka","Ivanovo",
+                "Ivanovo S","Ivanovskaia","Ivanovskii"}));
         Assert.assertTrue(UzPage.isCurrentDate());
         UzPage.setDate("October 2015", "8");
         Assert.assertEquals("10.08.2015", UzPage.checkDateOnSearchButton());
@@ -85,41 +88,6 @@ public class BookingUzTests {
         UzPage.pushSearch();
         UzPage.isErrorMessageCorrect();
         UzPage.closeErrorMessage();
-        UzPage.pushSearch();
-        UzPage.isErrorMessageCorrect();
-        UzPage.closeErrorMessage();
-    }
-    @Test
-    public void testBlock5_1() {
-        Assert.assertTrue(UzPage.checkMainStartElementsExist());
-    }
-    @Test
-    public void testBlock5_2() {
-        Assert.assertTrue(UzPage.checkAutocompleteValuesFrom("Ky"));
-    }
-    @Test
-    public void testBlock5_3() {
-        Assert.assertTrue(UzPage.checkAutocompleteValuesTo("Ivano"));
-    }
-    @Test
-    public void testBlock5_4() {
-        Assert.assertTrue(UzPage.isCurrentDate());
-    }
-    @Test
-    public void testBlock5_5() {
-        UzPage.setDate("October 2015", "8");
-        Assert.assertEquals("10.08.2015", UzPage.checkDateOnSearchButton());
-    }
-    @Test
-    public void testBlock5_6() {
-        UzPage.incorrectFillStationFromInput("Ky");
-        UzPage.incorrectFillStationTillInput("Ivano");
-        UzPage.pushSearch();
-        UzPage.isErrorMessageCorrect();
-        UzPage.closeErrorMessage();
-    }
-    @Test
-    public void testBlock5_7() {
         UzPage.pushSearch();
         UzPage.isErrorMessageCorrect();
         UzPage.closeErrorMessage();
