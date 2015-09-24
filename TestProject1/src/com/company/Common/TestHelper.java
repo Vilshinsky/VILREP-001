@@ -212,6 +212,12 @@ public class TestHelper {
         String FinalDate = dateFormat.format(date);
         return FinalDate;
     }
+    public static String generateActualDateDots() {
+        DateFormat dateFormat = new SimpleDateFormat("MM.dd.yyyy");
+        Date date = new Date();
+        String FinalDate = dateFormat.format(date);
+        return FinalDate;
+    }
     public static String generateStringValue() {
         DateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
         Date date = new Date();
