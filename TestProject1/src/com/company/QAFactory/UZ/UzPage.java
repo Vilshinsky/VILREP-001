@@ -1,4 +1,4 @@
-package com.company.QAFactory.PageObjects;
+package com.company.QAFactory.UZ;
 
 import com.company.Common.TestHelper;
 import org.openqa.selenium.WebElement;

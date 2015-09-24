@@ -1,7 +1,6 @@
-package com.company.QAFactory;
+package com.company.QAFactory.UZ;
 
 import com.company.Common.TestHelper;
-import com.company.QAFactory.PageObjects.UzPage;
 import org.junit.*;
 
 /**
