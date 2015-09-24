@@ -1,8 +1,12 @@
 package com.company.QAFactory.UZ;
 
 import com.company.Common.TestHelper;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Admin on 22.09.15.
@@ -41,7 +45,6 @@ public class UzPage {
     public static String sit31 = "//span[text()='31']/..";
     public static String sit41 = "//span[text()='41']/..";
     public static String sit42 = "//span[text()='42']/..";
-    public static String ticketPrice = "//*[@class='price']";
     public static String summaryPriceButton = "//*[@class='complex_btn']/b";
     public static String lastNameInput = "//*[@class='lastname']";
     public static String firstNameInput = "//*[@class='firstname']";
@@ -49,7 +52,6 @@ public class UzPage {
     public static String lowerLastNameInput = "//tbody/tr[2]//*[@class='lastname']";
     public static String higherFirstNameInput = "//tbody/tr[1]//*[@class='firstname']";
     public static String lowerFirstNameInput = "//tbody/tr[2]//*[@class='firstname']";
-
 
     public static boolean checkMainStartElementsExist() {
         if(TestHelper.cyclicElementSearchByXpath(stationFromInput).isDisplayed() &&
@@ -63,23 +65,19 @@ public class UzPage {
     public static String autocompeteValue(String xpath) {
         return TestHelper.cyclicElementSearchByXpath(xpath).getAttribute("title");
     }
-    public static boolean checkAutocompleteValuesFrom(String value) {
+    public static boolean checkAutocompleteValuesFrom(String value, String[] expected) {
         TestHelper.cyclicElementSearchByXpath(stationFromInput).sendKeys(value);
         isChosenElementAppeared("//*[@id='stations_from']/div[1]");
-        if(autocompeteValue("//*[@id='stations_from']/div[1]").equals("Kyaniv Pereval") &&
-                autocompeteValue("//*[@id='stations_from']/div[2]").equals("Kyanivka") &&
-                autocompeteValue("//*[@id='stations_from']/div[3]").equals("Kybyntsi") &&
-                autocompeteValue("//*[@id='stations_from']/div[4]").equals("Kychyranky") &&
-                autocompeteValue("//*[@id='stations_from']/div[5]").equals("Kyiv") &&
-                autocompeteValue("//*[@id='stations_from']/div[6]").equals("Kyivska Rusanivka") &&
-                autocompeteValue("//*[@id='stations_from']/div[7]").equals("Kyj") &&
-                autocompeteValue("//*[@id='stations_from']/div[8]").equals("Kykshor") &&
-                autocompeteValue("//*[@id='stations_from']/div[9]").equals("Kyn") &&
-                autocompeteValue("//*[@id='stations_from']/div[10]").equals("Kynnu")) {
-            return true;
+        List<WebElement> divs = TestHelper.driver.findElements(By.xpath("//*[@id='stations_from']/div"));
+        for(int i=0; i <= 9; i++) {
+            if(expected[i].equals(divs.get(i).getAttribute("title"))) {
+            } else {
+                return false;
+                }
         }
-        return false;
+        return true;
     }
+
     public static boolean checkAutocompleteValuesTo(String value) {
         TestHelper.cyclicElementSearchByXpath(stationTillInput).sendKeys(value);
         isChosenElementAppeared("//*[@id='stations_till']/div[1]");
@@ -193,7 +191,7 @@ public class UzPage {
     }
     public static void closeErrorMessage() {
         TestHelper.cyclicElementSearchByXpath("//*[@class='vToolsPopupToolbar']/button").click();
-        isChosenElementDisappeared("//*[@class='vToolsPopupToolbar']/button");
+        TestHelper.cyclicIsElementExistByXpath("//*[@class='vToolsPopupToolbar']/button");
     }
     public static String checkNumberOfTrain(String number) {
         return TestHelper.cyclicElementSearchByXpath(number).getText();
@@ -209,9 +207,6 @@ public class UzPage {
     }
     public static void goToSecondTrain() {
         TestHelper.cyclicElementSearchByXpath(trainSecond).click();
-    }
-    public static void goTo601Train() {
-        TestHelper.cyclicElementSearchByXpath(trainSixZeroOne).click();
     }
     public static boolean checkThatTrainRoutePopupExist() {
         if(TestHelper.cyclicElementSearchByXpath(trainRoutePopup).isDisplayed()) {
@@ -250,9 +245,6 @@ public class UzPage {
             return false;
         }
     }
-    public static String getPriceValue() {
-        return TestHelper.cyclicElementSearchByXpath(ticketPrice).getText();
-    }
     public static boolean cyclicValuesMatchWaitingBeforeAssert(String expectedGener, String element) {
         for (int i = 0; i < 5; i++)    {
             if (element.equals(expectedGener)) {
@@ -261,18 +253,6 @@ public class UzPage {
             TestHelper.waitMsec(1);
         }
         return true;
-    }
-    public static boolean cyclicSitPlacesStatusMatchWaiting(String expectedGener, String element) {
-        for (int i = 0; i < 5; i++)    {
-            if (element.equals(expectedGener)) {
-                break;
-            }
-            TestHelper.waitMsec(1);
-        }
-        return true;
-    }
-    public static String checkThatPlaceFree(String sit) {
-        return TestHelper.cyclicElementSearchByXpath(sit).getAttribute("class");
     }
     public static void goToMyFreePlace(String freeplace) {
         TestHelper.cyclicElementSearchByXpath(freeplace).click();
@@ -298,6 +278,7 @@ public class UzPage {
         return TestHelper.cyclicElementSearchByXpath(activityValue).getAttribute("class");
     }
     public static void isChosenButtonActive(String choose) {
+        isChosenElementDisappeared("//*[@id='loading_img']");
         for(int i = 0; i < 250; i++) {
             if(TestHelper.cyclicElementSearchByXpath(choose).isEnabled()) {
                 break;
@@ -305,5 +286,13 @@ public class UzPage {
             TestHelper.waitMsec(1);
         }
         TestHelper.cyclicElementSearchByXpath(choose).click();
+    }
+    public static List<String> getFromDropdown() {
+        List<WebElement> divs = TestHelper.driver.findElements(By.xpath("//*[@id='stations_from']/div"));
+        List<String> result = new ArrayList<String>();
+        for(WebElement div : divs) {
+            result.add(div.getAttribute("title"));
+        }
+        return result;
     }
 }

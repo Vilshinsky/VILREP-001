@@ -116,6 +116,15 @@ public class TestHelper {
         }
         return driver.findElement(By.xpath(target));
     }
+    public static WebElement cyclicIsElementExistByXpath(String target) {
+        for (int i = 0; i < 250; i++)    {
+            if (driver.findElements(By.xpath(target)).size() == 0) {
+                break;
+            }
+            waitMsec(1);
+        }
+        return null;
+    }
 
     public static WebElement cyclicElementIsDisplayedId(String target) {
         for (int i = 0; i < 250; i++)    {
