@@ -22,7 +22,7 @@ public class AnyWayAnyDay {
     @Test
     public void test1() {
         TestHelper.waitElementByCss(".j-current_culture").click();
-        TestHelper.cyclicElementIsDisplayedCss(".j-culture_section .b-drop_down_list-container>li:nth-child(4)>span>span").click();
+        TestHelper.waitElementDisplayedByCss(".j-culture_section .b-drop_down_list-container>li:nth-child(4)>span>span").click();
         TestHelper.waitElementByXpath("//span[text()='Dezember']").click();
         TestHelper.waitSec(2);
         TestHelper.waitElementByXpath("//*[@data-date='2015/12/24']//i").click();
@@ -34,6 +34,6 @@ public class AnyWayAnyDay {
         Assert.assertEquals("Berlin", TestHelper.waitElementByCss(".j-arrival_airport_input").getAttribute("value"));
 
         TestHelper.waitElementByCss(".j-culture_section").click();
-        TestHelper.cyclicElementIsDisplayedCss(".j-culture_section .b-drop_down_list-container>li:nth-child(4)>span>span").click();
+        TestHelper.waitElementDisplayedByCss(".j-culture_section .b-drop_down_list-container>li:nth-child(4)>span>span").click();
     }
 }

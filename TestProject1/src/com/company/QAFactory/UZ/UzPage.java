@@ -103,7 +103,7 @@ public class UzPage {
     public static void fillStationFromInput(String frominput) {
         TestHelper.waitElementByXpath(stationFromInput).clear();
         TestHelper.waitElementByXpath(stationFromInput).sendKeys(frominput);
-        TestHelper.cyclicElementIsDisplayedXpath(stationFromFirstDrop).click();
+        TestHelper.waitElementDisplayedByXpath(stationFromFirstDrop).click();
     }
     public static void incorrectFillStationTillInput(String tillinput) {
         TestHelper.waitElementByXpath(stationTillInput).clear();
@@ -112,11 +112,11 @@ public class UzPage {
     public static void fillStationTillInput(String tillinput) {
         TestHelper.waitElementByXpath(stationTillInput).clear();
         TestHelper.waitElementByXpath(stationTillInput).sendKeys(tillinput);
-        TestHelper.cyclicElementIsDisplayedXpath(stationTillFirstDrop).click();
+        TestHelper.waitElementDisplayedByXpath(stationTillFirstDrop).click();
     }
     public static void setDate(String month, String date) {
         TestHelper.waitElementByXpath(goToDepartureDateSetting).click();
-        TestHelper.cyclicElementIsDisplayedXpath("//*[text()='" + month + "']/..//td[text()='" + date + "']")
+        TestHelper.waitElementDisplayedByXpath("//*[text()='" + month + "']/..//td[text()='" + date + "']")
                 .click();
     }
     public static void pushSearch() {

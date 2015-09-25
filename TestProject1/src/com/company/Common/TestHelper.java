@@ -16,9 +16,6 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-/**
- * Created by Admin on 08.09.15.
- */
 public class TestHelper {
                                                                                                                         //SETUP WEBDRIVER
     public static WebDriver driver;
@@ -145,67 +142,177 @@ public class TestHelper {
         }
         return null;
     }
+                                                                                                                        //Waiting for element displays on the page
+    public static WebElement waitElementDisplayedById(String target) {
+        for (int i = 0; i < 250; i++)    {
+            if (waitElementById(target).isDisplayed()) {
+                break;
+            }
+            waitMsec(1);
+        }
+        return waitElementById(target);
+    }
+    public static WebElement waitElementDisplayedByCss(String target) {
+        for (int i = 0; i < 250; i++)    {
+            if (waitElementByCss(target).isDisplayed()) {
+                break;
+            }
+            waitMsec(1);
+        }
+        return waitElementByCss(target);
+    }
+    public static WebElement waitElementDisplayedByXpath(String target) {
+        for (int i = 0; i < 250; i++)    {
+            if (waitElementByXpath(target).isDisplayed()) {
+                break;
+            }
+            waitMsec(1);
+        }
+        return waitElementByXpath(target);
+    }
+                                                                                                                        //Waiting for element doesn't display on the page
+    public static WebElement waitElementNotDisplayedById(String target) {
+        for (int i = 0; i < 250; i++)    {
+            if (waitElementById(target).isDisplayed()) {
+                waitMsec(1);
+            }
+            break;
+        }
+        return waitElementById(target);
+    }
+    public static WebElement waitElementNotDisplayedByCss(String target) {
+        for (int i = 0; i < 250; i++)    {
+            if (waitElementByCss(target).isDisplayed()) {
+                waitMsec(1);
+            }
+            break;
+        }
+        return waitElementByCss(target);
+    }
+    public static WebElement waitElementNotDisplayedByXpath(String target) {
+        for (int i = 0; i < 250; i++)    {
+            if (waitElementByXpath(target).isDisplayed()) {
+                waitMsec(1);
+            }
+            break;
+        }
+        return waitElementByXpath(target);
+    }
+                                                                                                                        //Waiting for element enable on the page
+    public static WebElement waitElementEnabledById(String target) {
+        for (int i = 0; i < 250; i++)    {
+            if (waitElementById(target).isEnabled()) {
+                break;
+            }
+            waitMsec(1);
+        }
+        return waitElementById(target);
+    }
+    public static WebElement waitElementEnabledByCss(String target) {
+        for (int i = 0; i < 250; i++)    {
+            if (waitElementByCss(target).isEnabled()) {
+                break;
+            }
+            waitMsec(1);
+        }
+        return waitElementByCss(target);
+    }
+    public static WebElement waitElementEnabledByXpath(String target) {
+        for (int i = 0; i < 250; i++)    {
+            if (waitElementByXpath(target).isEnabled()) {
+                break;
+            }
+            waitMsec(1);
+        }
+        return waitElementByXpath(target);
+    }
+                                                                                                                        //Waiting for element disabled on the page
+    public static WebElement waitElementDisabledById(String target) {
+        for (int i = 0; i < 250; i++)    {
+            if (waitElementById(target).isEnabled()) {
+                waitMsec(1);
+            }
+            break;
+        }
+        return waitElementById(target);
+    }
+    public static WebElement waitElementDisabledByCss(String target) {
+        for (int i = 0; i < 250; i++)    {
+            if (waitElementByCss(target).isEnabled()) {
+                waitMsec(1);
+            }
+            break;
+        }
+        return waitElementByCss(target);
+    }
+    public static WebElement waitElementDisabledByXpath(String target) {
+        for (int i = 0; i < 250; i++)    {
+            if (waitElementByXpath(target).isEnabled()) {
+                waitMsec(1);
+            }
+            break;
+        }
+        return waitElementByXpath(target);
+    }
+                                                                                                                        //Waiting for two elements have equal values of some attribute
+    public static boolean waitEqualityById(String attribute, String expected, String actual) {
+        waitElementById(actual);
+        for (int i = 0; i < 250; i++)    {
+            if (driver.findElement(By.id(actual)).getAttribute(attribute).equals(expected)) {
+                break;
+            }
+            waitMsec(1);
+        }
+        return true;
+    }
+    public static boolean waitEqualityByCss(String attribute, String expected, String actual) {
+        waitElementByCss(actual);
+        for (int i = 0; i < 250; i++)    {
+            if (driver.findElement(By.cssSelector(actual)).getAttribute(attribute).equals(expected)) {
+                break;
+            }
+            waitMsec(1);
+        }
+        return true;
+    }
+    public static boolean waitEqualityByXpath(String attribute, String expected, String actual) {
+        waitElementByXpath(actual);
+        for (int i = 0; i < 250; i++)    {
+            if (driver.findElement(By.xpath(actual)).getAttribute(attribute).equals(expected)) {
+                break;
+            }
+            waitMsec(1);
+        }
+        return true;
+    }
 
-    public static WebElement cyclicElementIsDisplayedId(String target) {
+    public static boolean waitInequalityById(String attribute, String expected, String actual) {
+        waitElementById(actual);
         for (int i = 0; i < 250; i++)    {
-            if (TestHelper.waitElementById(target).isDisplayed()) {
-                break;
+            if (driver.findElement(By.id(actual)).getAttribute(attribute).equals(expected)) {
+                waitMsec(1);
             }
-            waitMsec(1);
-        }
-        return TestHelper.waitElementById(target);
-    }
-    public static WebElement cyclicElementIsDisplayedCss(String target) {
-        for (int i = 0; i < 250; i++)    {
-            if (TestHelper.waitElementByCss(target).isDisplayed()) {
-                break;
-            }
-            waitMsec(1);
-        }
-        return TestHelper.waitElementByCss(target);
-    }
-    public static WebElement cyclicElementIsDisplayedXpath(String target) {
-        for (int i = 0; i < 250; i++)    {
-            if (TestHelper.waitElementByXpath(target).isDisplayed()) {
-                break;
-            }
-            waitMsec(1);
-        }
-        return TestHelper.waitElementByXpath(target);
-    }
-                                                                                                                        //EQUALITY TEST FUNCTIONS
-    public static boolean checkIsValuesEqual(String expected, String actual) {
-        if (expected.equals(actual)) {
-            return true;
-        } else {
-            System.out.println("Expected value: " + expected + "; <||>" + " Actual value: " + actual + ";");
-            return false;
-        }
-    }
-    public static boolean cyclicStringEqualityWaitingById(String expected, String actual) {
-        for (int i = 0; i < 250; i++)    {
-            if (driver.findElement(By.id(actual)).getAttribute("value").equals(expected)) {
-                break;
-            }
-            waitMsec(1);
+            break;
         }
         return true;
     }
-    public static boolean cyclicStringEqualityWaitingByCss(String expected, String actual) {
+    public static boolean waitInequalityByCss(String attribute, String expected, String actual) {
+        waitElementByCss(actual);
         for (int i = 0; i < 250; i++)    {
-            if (driver.findElement(By.cssSelector(actual)).getAttribute("value").equals(expected)) {
-                break;
+            if (driver.findElement(By.cssSelector(actual)).getAttribute(attribute).equals(expected)) {
+                waitMsec(1);
             }
-            waitMsec(1);
+            break;
         }
         return true;
     }
-    public static boolean cyclicStringEqualityWaitingByXpath(String expected, String actual) {
+    public static boolean waitInequalityByXpath(String attribute, String expected, String actual) {
+        waitElementByXpath(actual);
         for (int i = 0; i < 250; i++)    {
-            if (driver.findElement(By.xpath(actual)).getAttribute("value").equals(expected)) {
-                break;
+            if (driver.findElement(By.xpath(actual)).getAttribute(attribute).equals(expected)) {
+                waitMsec(1);
             }
-            waitMsec(1);
+            break;
         }
         return true;
     }
@@ -224,11 +331,11 @@ public class TestHelper {
             alert.accept();
         }
     }
-
+                                                                                                                        //Output files and data generating
     public static void takeScreenshot() {
         try {
             File scrFile =
-                    ((TakesScreenshot)TestHelper.driver).getScreenshotAs(OutputType.FILE);
+                    ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
             FileUtils.copyFile(scrFile, new
                     File("C:\\Selenium\\Screenshots\\" + generateActualDate() + "\\" + generateStringValue() + ".png"));
         } catch (Exception e) {
@@ -253,7 +360,7 @@ public class TestHelper {
         String FinalDate = dateFormat.format(date);
         return FinalDate;
     }
-
+                                                                                                                        //Attaching files
     public static void setClipboardData(String string) {
         StringSelection stringSelection = new StringSelection(string);
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
